@@ -1,0 +1,22 @@
+/* join-button */
+.join-button-div {
+
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(182,188,193);
+}
+
+    .join-button {
+        padding: 15px 0;
+        width: 50%;
+        margin: 0 auto;
+        @extend %as_wide_as_parent;
+        height: 100px;
+        @extend %text_center;
+
+        h1 {
+            @extend %Josefin-Sans-font;
+            font-size: xx-large;
+        }
+    }
+/* end of join-button */

@@ -1,0 +1,22 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+/* core */
+.core {
+    @extend %relative;
+    @extend %text_center;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+
+    h1 {
+        padding: 35px 0;
+        @extend %Josefin-Sans-font;
+        font-size: xx-large;
+    }
+    h2 {
+        padding: 35px 0;
+        @extend %arial-font;
+        font-size: xx-large;
+    }
+}
+/* end of core */

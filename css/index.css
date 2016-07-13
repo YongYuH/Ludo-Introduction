@@ -1,0 +1,217 @@
+/* reset of css */
+/* line 2, ../sass/helpers/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 23, ../sass/helpers/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 27, ../sass/helpers/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 30, ../sass/helpers/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 33, ../sass/helpers/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 36, ../sass/helpers/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 41, ../sass/helpers/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end of reset of css */
+/* line 5, ../sass/helpers/_placeholders.scss */
+.header, .header-logo-div {
+  position: absolute;
+}
+
+/* line 9, ../sass/helpers/_placeholders.scss */
+.header-logo, .form, .core, .goal, .time-line {
+  position: relative;
+}
+
+/* line 13, ../sass/helpers/_placeholders.scss */
+.header, .header-logo, .form, .join-button {
+  width: 100%;
+}
+
+/* line 17, ../sass/helpers/_placeholders.scss */
+.header-logo-div, .header-logo {
+  height: 100%;
+}
+
+/* line 21, ../sass/helpers/_placeholders.scss */
+.form, .join-button, .core, .goal, .time-line {
+  text-align: center;
+}
+
+/* line 25, ../sass/helpers/_placeholders.scss */
+.core h2, .goal h2, .time-line h2 {
+  font-family: arial;
+}
+
+/* line 29, ../sass/helpers/_placeholders.scss */
+.form h1, .join-button h1, .core h1, .goal h1, .time-line h1 {
+  font-family: Josefin Sans;
+}
+
+/* line 37, ../sass/helpers/_placeholders.scss */
+.header-logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* header bar */
+/* line 5, ../sass/components/_header.scss */
+.header {
+  top: 0;
+  z-index: 1;
+  height: 50px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #b6bcc1;
+  background-color: #f8f8f8;
+}
+
+/* line 16, ../sass/components/_header.scss */
+.header-logo-div {
+  display: inline-block;
+  width: 250px;
+}
+
+/* line 22, ../sass/components/_header.scss */
+.header-logo {
+  display: inline-block;
+  z-index: 2;
+  background-image: url("../images/Logo.png");
+}
+
+/* end of header bar */
+/* form */
+/* line 5, ../sass/components/_form.scss */
+.form {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #b6bcc1;
+  margin-top: 50px;
+}
+/* line 14, ../sass/components/_form.scss */
+.form h1 {
+  padding: 35px 0;
+  font-size: xx-large;
+}
+
+/* end of form */
+/* join-button */
+/* line 2, ../sass/components/_join-button.scss */
+.join-button-div {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #b6bcc1;
+}
+
+/* line 9, ../sass/components/_join-button.scss */
+.join-button {
+  padding: 15px 0;
+  width: 50%;
+  margin: 0 auto;
+  height: 100px;
+}
+/* line 17, ../sass/components/_join-button.scss */
+.join-button h1 {
+  font-size: xx-large;
+}
+
+/* end of join-button */
+/* core */
+/* line 5, ../sass/components/_core.scss */
+.core {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+/* line 11, ../sass/components/_core.scss */
+.core h1 {
+  padding: 35px 0;
+  font-size: xx-large;
+}
+/* line 16, ../sass/components/_core.scss */
+.core h2 {
+  padding: 35px 0;
+  font-size: xx-large;
+}
+
+/* end of core */
+/* goal */
+/* line 5, ../sass/components/_goal.scss */
+.goal {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+/* line 11, ../sass/components/_goal.scss */
+.goal h1 {
+  padding: 35px 0;
+  font-size: xx-large;
+}
+/* line 16, ../sass/components/_goal.scss */
+.goal h2 {
+  padding: 35px 0;
+  font-size: xx-large;
+}
+
+/* end of goal */
+/* time-line */
+/* line 5, ../sass/components/_time-line.scss */
+.time-line {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+/* line 11, ../sass/components/_time-line.scss */
+.time-line h1 {
+  padding: 35px 0;
+  font-size: xx-large;
+}
+/* line 16, ../sass/components/_time-line.scss */
+.time-line h2 {
+  padding: 35px 0;
+  font-size: xx-large;
+}
+
+/* end of time-line*/

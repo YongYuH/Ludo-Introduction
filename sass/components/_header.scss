@@ -1,0 +1,31 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+/* header bar */
+.header {
+    @extend %absolute;
+    top: 0;
+    z-index: 1;
+    @extend %as_wide_as_parent;
+    height: $header_bar_height;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(182,188,193);
+    background-color: #f8f8f8;
+}
+    .header-logo-div {
+        @extend %absolute;
+        display: inline-block;
+        @extend %as_tall_as_parent;
+        width: 250px;
+    }
+        .header-logo {
+            @extend %relative;
+            display: inline-block;
+            @extend %as_wide_as_parent;
+            @extend %as_tall_as_parent;
+            z-index: 2;
+            @include background_img_content(Logo);
+            @extend %background_img_setting;
+        }
+/* end of header bar */
