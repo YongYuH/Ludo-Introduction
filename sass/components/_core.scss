@@ -4,15 +4,24 @@
 /* core */
 .core {
     @extend %relative;
+    height: 500px;
     @extend %text_center;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(182,188,193);
+    background-color: #e23e3e;
+    color: white;
+    
+    .game, .social, .expert {
+        width: 33%;
+        @extend %as_tall_as_parent;
+        float: left;
+    }
 
-    h1 {
-        padding: 35px 0;
-        @extend %Josefin-Sans-font;
-        font-size: x-large;
+    p {
+        @extend %as_tall_as_parent;
+        padding: 100px 0;
+        font-size: 160%;
 
         span {
             font-weight: bold;

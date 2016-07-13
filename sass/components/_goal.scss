@@ -4,6 +4,7 @@
 /* goal */
 .goal {
     @extend %relative;
+    height: 500px;
     @extend %text_center;
     border-top-width: 1px;
     border-top-style: solid;
@@ -11,11 +12,12 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(182,188,193);
+    background-color: #5aabe0;
+    color: white;
 
-    h1 {
-        padding: 35px 0;
-        @extend %Josefin-Sans-font;
-        font-size: x-large;
+    p {
+        padding: 100px 0;
+        font-size: 150%;
     }
 }
 /* end of goal */

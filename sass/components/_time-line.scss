@@ -4,14 +4,17 @@
 /* time-line */
 .time-line {
     @extend %relative;
+    height: 500px;
     @extend %text_center;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(182,188,193);
+    background-color: #1e7e52;
+    color: white;
 
     h1 {
         padding: 35px 0;
-        @extend %Josefin-Sans-font;
+        //@extend %Josefin-Sans-font;
         font-size: xx-large;
     }
 }

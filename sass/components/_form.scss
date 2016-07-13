@@ -4,17 +4,34 @@
 /* form */
 .form {
     @extend %relative;
+    height: 900px;
     @extend %as_wide_as_parent;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: rgb(182,188,193);
     @extend %text_center;
     margin-top: $header_bar_height;
+    background-color: #02a401;
+    color: white;
 
     h1 {
         padding: 35px 0;
-        @extend %Josefin-Sans-font;
+        //@extend %Josefin-Sans-font;
         font-size: xx-large;
     }
 }
+/* join */
+    .join {
+        width: 50%;
+        margin: 0 auto;
+        @extend %as_wide_as_parent;
+        height: 100px;
+        @extend %text_center;
+
+        h1 {
+            //@extend %Josefin-Sans-font;
+            font-size: x-large;
+        }
+    }
+/* end of join */
 /* end of form */

@@ -57,6 +57,11 @@ table {
 }
 
 /* end of reset of css */
+/* line 1, ../sass/helpers/_default.scss */
+body {
+  font-family: Microsoft JhengHei;
+}
+
 /* line 5, ../sass/helpers/_placeholders.scss */
 .header, .header-logo-div {
   position: absolute;
@@ -68,23 +73,18 @@ table {
 }
 
 /* line 13, ../sass/helpers/_placeholders.scss */
-.header, .header-logo, .form, .join-button {
+.header, .header-logo, .form, .join {
   width: 100%;
 }
 
 /* line 17, ../sass/helpers/_placeholders.scss */
-.header-logo-div, .header-logo {
+.header-logo-div, .header-logo, .core .game, .core .social, .core .expert, .core p {
   height: 100%;
 }
 
 /* line 21, ../sass/helpers/_placeholders.scss */
-.form, .join-button, .goal, .core, .time-line {
+.form, .join, .goal, .core, .time-line {
   text-align: center;
-}
-
-/* line 29, ../sass/helpers/_placeholders.scss */
-.form h1, .join-button h1, .goal h1, .core h1, .time-line h1 {
-  font-family: Josefin Sans;
 }
 
 /* line 37, ../sass/helpers/_placeholders.scss */
@@ -123,67 +123,76 @@ table {
 /* form */
 /* line 5, ../sass/components/_form.scss */
 .form {
+  height: 900px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: #b6bcc1;
   margin-top: 50px;
+  background-color: #02a401;
+  color: white;
 }
-/* line 14, ../sass/components/_form.scss */
+/* line 17, ../sass/components/_form.scss */
 .form h1 {
   padding: 35px 0;
   font-size: xx-large;
 }
 
-/* end of form */
-/* join-button */
-/* line 2, ../sass/components/_join.scss */
+/* join */
+/* line 24, ../sass/components/_form.scss */
 .join {
-  padding: 15px 0;
   width: 50%;
   margin: 0 auto;
-}
-
-/* line 7, ../sass/components/_join.scss */
-.join-button {
   height: 100px;
 }
-/* line 12, ../sass/components/_join.scss */
-.join-button h1 {
-  font-size: xx-large;
+/* line 31, ../sass/components/_form.scss */
+.join h1 {
+  font-size: x-large;
 }
 
-/* end of join-button */
+/* end of join */
+/* end of form */
 /* goal */
 /* line 5, ../sass/components/_goal.scss */
 .goal {
+  height: 500px;
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #b6bcc1;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #b6bcc1;
+  background-color: #5aabe0;
+  color: white;
 }
-/* line 15, ../sass/components/_goal.scss */
-.goal h1 {
-  padding: 35px 0;
-  font-size: x-large;
+/* line 18, ../sass/components/_goal.scss */
+.goal p {
+  padding: 100px 0;
+  font-size: 150%;
 }
 
 /* end of goal */
 /* core */
 /* line 5, ../sass/components/_core.scss */
 .core {
+  height: 500px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #b6bcc1;
+  background-color: #e23e3e;
+  color: white;
 }
-/* line 12, ../sass/components/_core.scss */
-.core h1 {
-  padding: 35px 0;
-  font-size: x-large;
+/* line 15, ../sass/components/_core.scss */
+.core .game, .core .social, .core .expert {
+  width: 33%;
+  float: left;
 }
-/* line 17, ../sass/components/_core.scss */
-.core h1 span {
+/* line 21, ../sass/components/_core.scss */
+.core p {
+  padding: 100px 0;
+  font-size: 160%;
+}
+/* line 26, ../sass/components/_core.scss */
+.core p span {
   font-weight: bold;
 }
 
@@ -191,11 +200,14 @@ table {
 /* time-line */
 /* line 5, ../sass/components/_time-line.scss */
 .time-line {
+  height: 500px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #b6bcc1;
+  background-color: #1e7e52;
+  color: white;
 }
-/* line 12, ../sass/components/_time-line.scss */
+/* line 15, ../sass/components/_time-line.scss */
 .time-line h1 {
   padding: 35px 0;
   font-size: xx-large;
