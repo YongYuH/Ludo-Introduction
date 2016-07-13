@@ -63,7 +63,7 @@ table {
 }
 
 /* line 9, ../sass/helpers/_placeholders.scss */
-.header-logo, .form, .core, .goal, .time-line {
+.header-logo, .form, .goal, .core, .time-line {
   position: relative;
 }
 
@@ -78,17 +78,12 @@ table {
 }
 
 /* line 21, ../sass/helpers/_placeholders.scss */
-.form, .join-button, .core, .goal, .time-line {
+.form, .join-button, .goal, .core, .time-line {
   text-align: center;
 }
 
-/* line 25, ../sass/helpers/_placeholders.scss */
-.core h2, .goal h2, .time-line h2 {
-  font-family: arial;
-}
-
 /* line 29, ../sass/helpers/_placeholders.scss */
-.form h1, .join-button h1, .core h1, .goal h1, .time-line h1 {
+.form h1, .join-button h1, .goal h1, .core h1, .time-line h1 {
   font-family: Josefin Sans;
 }
 
@@ -141,75 +136,67 @@ table {
 
 /* end of form */
 /* join-button */
-/* line 2, ../sass/components/_join-button.scss */
-.join-button-div {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #b6bcc1;
-}
-
-/* line 9, ../sass/components/_join-button.scss */
-.join-button {
+/* line 2, ../sass/components/_join.scss */
+.join {
   padding: 15px 0;
   width: 50%;
   margin: 0 auto;
+}
+
+/* line 7, ../sass/components/_join.scss */
+.join-button {
   height: 100px;
 }
-/* line 17, ../sass/components/_join-button.scss */
+/* line 12, ../sass/components/_join.scss */
 .join-button h1 {
   font-size: xx-large;
 }
 
 /* end of join-button */
-/* core */
-/* line 5, ../sass/components/_core.scss */
-.core {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-}
-/* line 11, ../sass/components/_core.scss */
-.core h1 {
-  padding: 35px 0;
-  font-size: xx-large;
-}
-/* line 16, ../sass/components/_core.scss */
-.core h2 {
-  padding: 35px 0;
-  font-size: xx-large;
-}
-
-/* end of core */
 /* goal */
 /* line 5, ../sass/components/_goal.scss */
 .goal {
-  border-bottom-style: solid;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #b6bcc1;
   border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #b6bcc1;
 }
-/* line 11, ../sass/components/_goal.scss */
+/* line 15, ../sass/components/_goal.scss */
 .goal h1 {
   padding: 35px 0;
-  font-size: xx-large;
-}
-/* line 16, ../sass/components/_goal.scss */
-.goal h2 {
-  padding: 35px 0;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 /* end of goal */
+/* core */
+/* line 5, ../sass/components/_core.scss */
+.core {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #b6bcc1;
+}
+/* line 12, ../sass/components/_core.scss */
+.core h1 {
+  padding: 35px 0;
+  font-size: x-large;
+}
+/* line 17, ../sass/components/_core.scss */
+.core h1 span {
+  font-weight: bold;
+}
+
+/* end of core */
 /* time-line */
 /* line 5, ../sass/components/_time-line.scss */
 .time-line {
-  border-bottom-style: solid;
   border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #b6bcc1;
 }
-/* line 11, ../sass/components/_time-line.scss */
+/* line 12, ../sass/components/_time-line.scss */
 .time-line h1 {
-  padding: 35px 0;
-  font-size: xx-large;
-}
-/* line 16, ../sass/components/_time-line.scss */
-.time-line h2 {
   padding: 35px 0;
   font-size: xx-large;
 }

@@ -5,18 +5,18 @@
 .core {
     @extend %relative;
     @extend %text_center;
-    border-bottom-style: solid;
     border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(182,188,193);
 
     h1 {
         padding: 35px 0;
         @extend %Josefin-Sans-font;
-        font-size: xx-large;
-    }
-    h2 {
-        padding: 35px 0;
-        @extend %arial-font;
-        font-size: xx-large;
+        font-size: x-large;
+
+        span {
+            font-weight: bold;
+        }
     }
 }
 /* end of core */
