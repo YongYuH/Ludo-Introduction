@@ -9,22 +9,22 @@
     @extend %as_wide_as_parent;
     height: $header_bar_height;
     background-color: white;
+    border-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #f5f5f5;
 }
     .header-logo-div {
         @extend %relative;
-        display: inline-block;
         @extend %as_tall_as_parent;
-        width: 250px;
+        width: $header_bar_logo_width;
+        margin: 0 auto;
     }
         .header-logo {
             @extend %relative;
-            display: inline-block;
-            @extend %as_wide_as_parent;
+            top: 15px;
             @extend %as_tall_as_parent;
-            z-index: 3;
-            padding-top: 30px;
             @include background_img_content(Logo);
             @extend %background_img_setting;
-            background-size: 100%;
+            background-size: 120%;
         }
 /* end of header bar */

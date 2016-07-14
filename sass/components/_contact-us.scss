@@ -1,0 +1,18 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+/* contact-us */
+.contact-us {
+    @extend %relative;
+    height: $contact-us_page_height;
+    @extend %text_center;
+    background-color: #cfd8dc;
+    color: rgba(0,0,0,0.8);
+}
+    .contact-us-text {
+        h1 {
+            padding: $contact-us_padding_y 0;
+            font-size: $contact-us_text_font-size;
+        }
+    }
+/* end of contact-us*/

@@ -4,19 +4,19 @@
 /* form */
 .form {
     @extend %relative;
-    height: 900px;
+    height: $form_page_height;
     @extend %as_wide_as_parent;
     @extend %text_center;
     background-color: #fbc02c;
     color: white;
-
-    p {
-        padding-bottom: 5px;
-        font-size: 150%;
-    }
 }
     .form-text {
         padding-top: 30px;
         padding-bottom: 30px;
+
+        p {
+            padding-bottom: 5px;
+            font-size: $form_text_font-size;
+        }
     }
 /* end of form */

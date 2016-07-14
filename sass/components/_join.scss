@@ -1,0 +1,61 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+/* join */
+.join {
+    @extend %relative;
+    height: $join_page_height;
+    margin-top: $header_bar_height;
+    background-color: #0e579b;
+    color: white;
+}
+    .join-text {
+        @extend %text_center;
+    }
+        .welcome-text {
+            margin-top: $join_text_from_top;
+            p {
+                line-height: 120%;
+                @extend %Verdana_font;
+                @extend %bold_font;
+                font-size: $join_text_font_size;
+            }
+        }
+        .users-text {
+            margin-top: 2.5vw;
+            p {
+                line-height: 120%;
+                @extend %Verdana_font;
+                font-size: $users_text_font_size;
+                .users-num {
+                    line-height: 130%;
+                    font-size: $users_num_font_size;
+                }
+            }
+        }
+        .join-button {
+            width: $button_width;
+            height: $button_height;
+            margin: 0 auto;
+            margin-top: 2.5vw;
+            @extend %text_center;
+            background-color: #0a3f70;
+
+            a {
+                @extend %relative;
+                top: 10px;
+                color: white;
+                text-decoration:none
+            }
+        }
+
+    .join-img {
+        @extend %relative;
+        float: right;
+        @extend %as_tall_as_parent;
+        padding-bottom: $join_img_padding_bottom;
+        @extend %background_img_setting;
+        @include background_img_content(join);
+        opacity: 0.9;
+    }
+/* end of join */

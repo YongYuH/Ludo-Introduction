@@ -1,19 +1,42 @@
-// 1 cm = 40px
+// 1 em = 16px
+// 1 cm = 40px = 2.5em
+$break-small: 768px;
+$break-medium: 992px;
+$break-large: 1200px;
 
 // headerbar 
-$header_bar_height: 88px; // 2.2cm
+$header_bar_height: 14.8vh; //93px; // 2.2cm
+$header_bar_logo_width: 200px;
 
 // join
-$text-from-top: 64px; // 1.6 cm
-$text-from-left: 120px; // 3 cm
-$users-from-top: 240px; // 6 cm
-$users-from-left: 200px; // 5 cm
-$button-from-top: 440px; // 11cm
-$button-from-left: 280px; // 7cm
-$button-width: 96px;// 2.4 cm
-$button-height: 40px;// 1 cm
+$join_page_height: 560px;
+$join_text_from_top: 64px; // 1.6 cm
+$join_text_from_left: 120px; // 3 cm
+$join_text_font_size: 40px;
+
+$users_text_from_top: 240px; // 6 cm
+$users_text_from_left: 200px; // 5 cm
+$users_text_font_size: 24px;
+$users_num_font_size: 100px;
+
+$button_from_top: 440px; // 11cm
+$button_from_left: 280px; // 7cm
+$button_width: 96px;// 2.4 cm
+$button_height: 40px;// 1 cm
+
+$join_img_padding_bottom: 10px;
 
 // introduction 
 $introduction_page_height: 172px; // 4.3 cm
 $introduction_padding_y: 40px; // 1 cm
 $introduction_text_padding_bottom: 6px; // 0.5 cm
+$introduction_text_font_size: 30px; //150%;
+
+// form
+$form_page_height: 720px;
+$form_text_font-size: 30px;
+
+// contact-us
+$contact-us_page_height: 200px;
+$contact-us_padding_y: 20px;
+$contact-us_text_font-size: 30px;
