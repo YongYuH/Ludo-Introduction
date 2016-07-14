@@ -182,7 +182,6 @@ body {
 /* line 52, ../sass/components/_join.scss */
 .join-img {
   float: right;
-  padding-bottom: 10px;
   background-image: url("../images/join.png");
   opacity: 0.9;
 }
@@ -249,7 +248,7 @@ body {
 /* form */
 /* line 5, ../sass/components/_form.scss */
 .form {
-  height: 720px;
+  height: 750px;
   background-color: #fbc02c;
   color: white;
 }

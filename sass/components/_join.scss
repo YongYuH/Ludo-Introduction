@@ -53,7 +53,6 @@
         @extend %relative;
         float: right;
         @extend %as_tall_as_parent;
-        padding-bottom: $join_img_padding_bottom;
         @extend %background_img_setting;
         @include background_img_content(join);
         opacity: 0.9;
