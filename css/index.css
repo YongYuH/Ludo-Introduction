@@ -57,38 +57,53 @@ table {
 }
 
 /* end of reset of css */
-/* line 1, ../sass/helpers/_default.scss */
-body {
-  font-family: Microsoft JhengHei;
+/* line 1, ../sass/helpers/_placeholders.scss */
+.header {
+  position: fixed;
 }
 
 /* line 5, ../sass/helpers/_placeholders.scss */
-.header, .header-logo-div {
+.join-text, .users, .join-button {
   position: absolute;
 }
 
 /* line 9, ../sass/helpers/_placeholders.scss */
-.header-logo, .form, .goal, .core, .time-line {
+.header-logo-div, .header-logo, .join, .join-button a, .join-img, .introduction, .core, .game-img, .game-text, .social-img, .social-text, .expert-img, .expert-text, .form, .contact-us {
   position: relative;
 }
 
 /* line 13, ../sass/helpers/_placeholders.scss */
-.header, .header-logo, .form, .join {
+.header, .header-logo, .form {
   width: 100%;
 }
 
 /* line 17, ../sass/helpers/_placeholders.scss */
-.header-logo-div, .header-logo, .core .game, .core .social, .core .expert, .core p {
+.header-logo-div, .header-logo, .join-img, .game, .social, .expert {
   height: 100%;
 }
 
 /* line 21, ../sass/helpers/_placeholders.scss */
-.form, .join, .goal, .core, .time-line {
+.users p, .join-button, .introduction, .core, .form, .contact-us {
   text-align: center;
 }
 
+/* line 25, ../sass/helpers/_placeholders.scss */
+.join-text p {
+  font-weight: bold;
+}
+
 /* line 37, ../sass/helpers/_placeholders.scss */
-.header-logo {
+body {
+  font-family: 'Trebuchet MS';
+}
+
+/* line 41, ../sass/helpers/_placeholders.scss */
+.join-text p, .users p {
+  font-family: Verdana;
+}
+
+/* line 49, ../sass/helpers/_placeholders.scss */
+.header-logo, .join-img, .game-img, .social-img, .expert-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -98,119 +113,169 @@ body {
 /* line 5, ../sass/components/_header.scss */
 .header {
   top: 0;
-  z-index: 1;
-  height: 50px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #b6bcc1;
-  background-color: #f8f8f8;
+  z-index: 2;
+  height: 88px;
+  background-color: white;
 }
 
-/* line 16, ../sass/components/_header.scss */
+/* line 13, ../sass/components/_header.scss */
 .header-logo-div {
   display: inline-block;
   width: 250px;
 }
 
-/* line 22, ../sass/components/_header.scss */
+/* line 19, ../sass/components/_header.scss */
 .header-logo {
   display: inline-block;
-  z-index: 2;
+  z-index: 3;
+  padding-top: 30px;
   background-image: url("../images/Logo.png");
+  background-size: 100%;
 }
 
 /* end of header bar */
+/* join */
+/* line 5, ../sass/components/_join.scss */
+.join {
+  height: 580px;
+  margin-top: 88px;
+  background-color: #0e579b;
+  color: white;
+}
+
+/* line 12, ../sass/components/_join.scss */
+.join-text {
+  top: 64px;
+  left: 120px;
+}
+/* line 17, ../sass/components/_join.scss */
+.join-text p {
+  padding-bottom: 2px;
+  font-size: 220%;
+}
+
+/* line 24, ../sass/components/_join.scss */
+.users {
+  top: 240px;
+  left: 200px;
+}
+/* line 33, ../sass/components/_join.scss */
+.users p .user-num {
+  font-size: 450%;
+}
+
+/* line 39, ../sass/components/_join.scss */
+.join-button {
+  top: 440px;
+  left: 280px;
+  width: 96px;
+  height: 40px;
+  background-color: #0a3f70;
+}
+/* line 48, ../sass/components/_join.scss */
+.join-button a {
+  top: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 56, ../sass/components/_join.scss */
+.join-img {
+  width: 50%;
+  float: right;
+  background-image: url("../images/join.png");
+  opacity: 0.9;
+}
+
+/* end of join */
+/* introduction */
+/* line 9, ../sass/components/_introduction.scss */
+.introduction p {
+  padding-bottom: 6px;
+  font-size: 150%;
+}
+
+/* line 15, ../sass/components/_introduction.scss */
+.introduction-text {
+  margin: 40px 0;
+}
+
+/* end of introduction */
+/* core */
+/* line 5, ../sass/components/_core.scss */
+.core {
+  background-color: #ff9300;
+  color: white;
+}
+
+/* line 12, ../sass/components/_core.scss */
+.game, .social, .expert {
+  padding-top: 16px;
+}
+/* line 18, ../sass/components/_core.scss */
+.game h1, .social h1, .expert h1 {
+  font-size: 180%;
+  padding-bottom: 20px;
+}
+/* line 23, ../sass/components/_core.scss */
+.game p, .social p, .expert p {
+  font-size: 120%;
+  padding-bottom: 6px;
+}
+
+/* line 28, ../sass/components/_core.scss */
+.game-img, .social-img, .expert-img {
+  background-size: 35%;
+  height: 290px;
+}
+
+/* line 32, ../sass/components/_core.scss */
+.game-img {
+  background-image: url("../images/game.png");
+}
+
+/* line 40, ../sass/components/_core.scss */
+.social-img {
+  background-image: url("../images/social.png");
+}
+
+/* line 48, ../sass/components/_core.scss */
+.expert-img {
+  background-image: url("../images/expert.png");
+}
+
+/* end of core */
 /* form */
 /* line 5, ../sass/components/_form.scss */
 .form {
   height: 900px;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: #b6bcc1;
-  margin-top: 50px;
-  background-color: #02a401;
+  background-color: #fbc02c;
   color: white;
 }
-/* line 17, ../sass/components/_form.scss */
-.form h1 {
-  padding: 35px 0;
-  font-size: xx-large;
-}
-
-/* join */
-/* line 24, ../sass/components/_form.scss */
-.join {
-  width: 50%;
-  margin: 0 auto;
-  height: 100px;
-}
-/* line 31, ../sass/components/_form.scss */
-.join h1 {
-  font-size: x-large;
-}
-
-/* end of join */
-/* end of form */
-/* goal */
-/* line 5, ../sass/components/_goal.scss */
-.goal {
-  height: 500px;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #b6bcc1;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #b6bcc1;
-  background-color: #5aabe0;
-  color: white;
-}
-/* line 18, ../sass/components/_goal.scss */
-.goal p {
-  padding: 100px 0;
+/* line 13, ../sass/components/_form.scss */
+.form p {
+  padding-bottom: 5px;
   font-size: 150%;
 }
 
-/* end of goal */
-/* core */
-/* line 5, ../sass/components/_core.scss */
-.core {
-  height: 500px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #b6bcc1;
-  background-color: #e23e3e;
-  color: white;
-}
-/* line 15, ../sass/components/_core.scss */
-.core .game, .core .social, .core .expert {
-  width: 33%;
-  float: left;
-}
-/* line 21, ../sass/components/_core.scss */
-.core p {
-  padding: 100px 0;
-  font-size: 160%;
-}
-/* line 26, ../sass/components/_core.scss */
-.core p span {
-  font-weight: bold;
+/* line 18, ../sass/components/_form.scss */
+.form-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-/* end of core */
-/* time-line */
-/* line 5, ../sass/components/_time-line.scss */
-.time-line {
-  height: 500px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #b6bcc1;
-  background-color: #1e7e52;
+/* end of form */
+/* contact-us */
+/* line 5, ../sass/components/_contact-us.scss */
+.contact-us {
+  height: 200px;
+  background-color: #cfd8dc;
   color: white;
 }
-/* line 15, ../sass/components/_time-line.scss */
-.time-line h1 {
+/* line 12, ../sass/components/_contact-us.scss */
+.contact-us h1 {
   padding: 35px 0;
   font-size: xx-large;
 }
 
-/* end of time-line*/
+/* end of contact-us*/

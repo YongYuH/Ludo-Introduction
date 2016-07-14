@@ -3,18 +3,15 @@
 @import "helpers/placeholders";
 /* header bar */
 .header {
-    @extend %absolute;
+    @extend %fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     @extend %as_wide_as_parent;
     height: $header_bar_height;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: rgb(182,188,193);
-    background-color: #f8f8f8;
+    background-color: white;
 }
     .header-logo-div {
-        @extend %absolute;
+        @extend %relative;
         display: inline-block;
         @extend %as_tall_as_parent;
         width: 250px;
@@ -24,8 +21,10 @@
             display: inline-block;
             @extend %as_wide_as_parent;
             @extend %as_tall_as_parent;
-            z-index: 2;
+            z-index: 3;
+            padding-top: 30px;
             @include background_img_content(Logo);
             @extend %background_img_setting;
+            background-size: 100%;
         }
 /* end of header bar */
