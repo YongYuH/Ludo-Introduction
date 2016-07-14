@@ -1,0 +1,22 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+/* form */
+.form {
+    @extend %relative;
+    height: 900px;
+    @extend %as_wide_as_parent;
+    @extend %text_center;
+    background-color: #fbc02c;
+    color: white;
+
+    p {
+        padding-bottom: 5px;
+        font-size: 150%;
+    }
+}
+    .form-text {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+/* end of form */

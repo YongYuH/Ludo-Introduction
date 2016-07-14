@@ -1,0 +1,281 @@
+/* reset of css */
+/* line 2, ../sass/helpers/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 23, ../sass/helpers/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 27, ../sass/helpers/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 30, ../sass/helpers/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 33, ../sass/helpers/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 36, ../sass/helpers/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 41, ../sass/helpers/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end of reset of css */
+/* line 1, ../sass/helpers/_placeholders.scss */
+.header {
+  position: fixed;
+}
+
+/* line 5, ../sass/helpers/_placeholders.scss */
+.join-text, .users, .join-button {
+  position: absolute;
+}
+
+/* line 9, ../sass/helpers/_placeholders.scss */
+.header-logo-div, .header-logo, .join, .join-button a, .join-img, .introduction, .core, .game-img, .game-text, .social-img, .social-text, .expert-img, .expert-text, .form, .contact-us {
+  position: relative;
+}
+
+/* line 13, ../sass/helpers/_placeholders.scss */
+.header, .header-logo, .form {
+  width: 100%;
+}
+
+/* line 17, ../sass/helpers/_placeholders.scss */
+.header-logo-div, .header-logo, .join-img, .game, .social, .expert {
+  height: 100%;
+}
+
+/* line 21, ../sass/helpers/_placeholders.scss */
+.users p, .join-button, .introduction, .core, .form, .contact-us {
+  text-align: center;
+}
+
+/* line 25, ../sass/helpers/_placeholders.scss */
+.join-text p {
+  font-weight: bold;
+}
+
+/* line 37, ../sass/helpers/_placeholders.scss */
+body {
+  font-family: 'Trebuchet MS';
+}
+
+/* line 41, ../sass/helpers/_placeholders.scss */
+.join-text p, .users p {
+  font-family: Verdana;
+}
+
+/* line 49, ../sass/helpers/_placeholders.scss */
+.header-logo, .join-img, .game-img, .social-img, .expert-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* header bar */
+/* line 5, ../sass/components/_header.scss */
+.header {
+  top: 0;
+  z-index: 2;
+  height: 88px;
+  background-color: white;
+}
+
+/* line 13, ../sass/components/_header.scss */
+.header-logo-div {
+  display: inline-block;
+  width: 250px;
+}
+
+/* line 19, ../sass/components/_header.scss */
+.header-logo {
+  display: inline-block;
+  z-index: 3;
+  padding-top: 30px;
+  background-image: url("../images/Logo.png");
+  background-size: 100%;
+}
+
+/* end of header bar */
+/* join */
+/* line 5, ../sass/components/_join.scss */
+.join {
+  height: 580px;
+  margin-top: 88px;
+  background-color: #0e579b;
+  color: white;
+}
+
+/* line 12, ../sass/components/_join.scss */
+.join-text {
+  top: 64px;
+  left: 120px;
+}
+/* line 17, ../sass/components/_join.scss */
+.join-text p {
+  padding-bottom: 2px;
+  font-size: 220%;
+}
+
+/* line 24, ../sass/components/_join.scss */
+.users {
+  top: 240px;
+  left: 200px;
+}
+/* line 33, ../sass/components/_join.scss */
+.users p .user-num {
+  font-size: 450%;
+}
+
+/* line 39, ../sass/components/_join.scss */
+.join-button {
+  top: 440px;
+  left: 280px;
+  width: 96px;
+  height: 40px;
+  background-color: #0a3f70;
+}
+/* line 48, ../sass/components/_join.scss */
+.join-button a {
+  top: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 56, ../sass/components/_join.scss */
+.join-img {
+  width: 50%;
+  float: right;
+  background-image: url("../images/join.png");
+  opacity: 0.9;
+}
+
+/* end of join */
+/* introduction */
+/* line 9, ../sass/components/_introduction.scss */
+.introduction p {
+  padding-bottom: 6px;
+  font-size: 150%;
+}
+
+/* line 15, ../sass/components/_introduction.scss */
+.introduction-text {
+  margin: 40px 0;
+}
+
+/* end of introduction */
+/* core */
+/* line 5, ../sass/components/_core.scss */
+.core {
+  background-color: #ff9300;
+  color: white;
+}
+
+/* line 12, ../sass/components/_core.scss */
+.game, .social, .expert {
+  padding-top: 16px;
+}
+/* line 18, ../sass/components/_core.scss */
+.game h1, .social h1, .expert h1 {
+  font-size: 180%;
+  padding-bottom: 20px;
+}
+/* line 23, ../sass/components/_core.scss */
+.game p, .social p, .expert p {
+  font-size: 120%;
+  padding-bottom: 6px;
+}
+
+/* line 28, ../sass/components/_core.scss */
+.game-img, .social-img, .expert-img {
+  background-size: 35%;
+  height: 290px;
+}
+
+/* line 32, ../sass/components/_core.scss */
+.game-img {
+  background-image: url("../images/game.png");
+}
+
+/* line 40, ../sass/components/_core.scss */
+.social-img {
+  background-image: url("../images/social.png");
+}
+
+/* line 48, ../sass/components/_core.scss */
+.expert-img {
+  background-image: url("../images/expert.png");
+}
+
+/* end of core */
+/* form */
+/* line 5, ../sass/components/_form.scss */
+.form {
+  height: 900px;
+  background-color: #fbc02c;
+  color: white;
+}
+/* line 13, ../sass/components/_form.scss */
+.form p {
+  padding-bottom: 5px;
+  font-size: 150%;
+}
+
+/* line 18, ../sass/components/_form.scss */
+.form-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* end of form */
+/* contact-us */
+/* line 5, ../sass/components/_contact-us.scss */
+.contact-us {
+  height: 200px;
+  background-color: #cfd8dc;
+  color: white;
+}
+/* line 12, ../sass/components/_contact-us.scss */
+.contact-us h1 {
+  padding: 35px 0;
+  font-size: xx-large;
+}
+
+/* end of contact-us*/
