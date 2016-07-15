@@ -126,15 +126,21 @@ body {
   width: 200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 375px) {
+  /* line 16, ../sass/components/_header.scss */
+  .header-logo-div {
+    margin: 0;
+  }
+}
 
-/* line 22, ../sass/components/_header.scss */
+/* line 26, ../sass/components/_header.scss */
 .header-logo {
   top: 15px;
   background-image: url("../images/Logo.png");
   background-size: 120%;
 }
 
-/* line 30, ../sass/components/_header.scss */
+/* line 34, ../sass/components/_header.scss */
 .log-in {
   top: 30%;
   right: 3%;
@@ -143,7 +149,7 @@ body {
   border-width: thin;
   padding: 10px;
 }
-/* line 39, ../sass/components/_header.scss */
+/* line 43, ../sass/components/_header.scss */
 .log-in:hover {
   text-decoration: none;
   background-color: red;
