@@ -36,13 +36,15 @@
         top: 30%;
         right: 3%;
         border-style: solid;
-        border-color: black;
+        border-color: $blue;
         border-width: thin;
         padding: 10px;
-
-        &:hover{
+        transition-duration: 0.3s;
+        &:hover {
             text-decoration: none;
-            background-color: red;
+            background-color: $blue;
+            color: white;
+            transition-duration: 0.3s;
         }
     }
 /* end of header bar */

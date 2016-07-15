@@ -114,7 +114,7 @@ body {
 .header {
   top: 0;
   z-index: 2;
-  height: 14.8vh;
+  height: 93px;
   background-color: white;
   border-width: 1px;
   border-bottom-style: solid;
@@ -145,14 +145,17 @@ body {
   top: 30%;
   right: 3%;
   border-style: solid;
-  border-color: black;
+  border-color: rgba(14, 87, 155, 0.9);
   border-width: thin;
   padding: 10px;
+  transition-duration: 0.3s;
 }
 /* line 43, ../sass/components/_header.scss */
 .log-in:hover {
   text-decoration: none;
-  background-color: red;
+  background-color: rgba(14, 87, 155, 0.9);
+  color: white;
+  transition-duration: 0.3s;
 }
 
 /* end of header bar */
@@ -168,8 +171,8 @@ body {
 /* line 5, ../sass/components/_join.scss */
 .join {
   height: 560px;
-  margin-top: 14.8vh;
-  background-color: #0e579b;
+  margin-top: 93px;
+  background-color: rgba(14, 87, 155, 0.9);
   color: white;
 }
 
@@ -182,38 +185,39 @@ body {
   line-height: 120%;
   font-size: 40px;
 }
-
-/* line 25, ../sass/components/_join.scss */
-.users-text {
-  margin-top: 2.5vw;
+@media screen and (max-width: 768px) {
+  /* line 18, ../sass/components/_join.scss */
+  .welcome-text p {
+    font-size: 38px;
+  }
 }
-/* line 27, ../sass/components/_join.scss */
+
+/* line 29, ../sass/components/_join.scss */
 .users-text p {
   line-height: 120%;
   font-size: 24px;
 }
-/* line 31, ../sass/components/_join.scss */
+/* line 33, ../sass/components/_join.scss */
 .users-text p .users-num {
   line-height: 130%;
   font-size: 100px;
 }
 
-/* line 37, ../sass/components/_join.scss */
+/* line 39, ../sass/components/_join.scss */
 .join-button {
   width: 96px;
   height: 40px;
   margin: 0 auto;
-  margin-top: 2.5vw;
+  margin-bottom: 20px;
   background-color: #0a3f70;
 }
-/* line 45, ../sass/components/_join.scss */
+/* line 47, ../sass/components/_join.scss */
 .join-button a {
-  top: 10px;
   color: white;
   text-decoration: none;
 }
 
-/* line 53, ../sass/components/_join.scss */
+/* line 54, ../sass/components/_join.scss */
 .join-img {
   float: right;
   background-image: url("../images/join.png");

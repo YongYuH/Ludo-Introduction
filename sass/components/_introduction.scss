@@ -9,7 +9,8 @@
 }
 
     .introduction-text {
-        margin: $introduction_padding_y 0;
+        margin: $introduction_padding_y 25px;
+        line-height: 1.2;
 
         p {
             padding-bottom: $introduction_text_padding_bottom;

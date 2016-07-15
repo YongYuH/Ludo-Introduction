@@ -7,7 +7,7 @@
     @extend %as_wide_as_parent;
     height: $join_page_height;
     margin-top: $header_bar_height;
-    background-color: #0e579b;
+    background-color: $blue;
     color: white;
 }
     .join-text {
@@ -19,11 +19,13 @@
                 line-height: 120%;
                 @extend %Verdana_font;
                 @extend %bold_font;
-                font-size: $join_text_font_size;
+                font-size: $join_text_large_screen_font_size;
+                @media screen and (max-width: $bt_xs_width) {
+                    font-size: $join_text_small_screen_font_size;
+                }
             }
         }
         .users-text {
-            margin-top: 2.5vw;
             p {
                 line-height: 120%;
                 @extend %Verdana_font;
@@ -38,15 +40,14 @@
             width: $button_width;
             height: $button_height;
             margin: 0 auto;
-            margin-top: 2.5vw;
+            margin-bottom: 20px;
             @extend %text_center;
             background-color: #0a3f70;
 
             a {
                 @extend %relative;
-                top: 10px;
                 color: white;
-                text-decoration:none
+                text-decoration: none;
             }
         }
 

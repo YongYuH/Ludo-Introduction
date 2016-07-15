@@ -1,17 +1,24 @@
 // 1 em = 16px
 // 1 cm = 40px = 2.5em
+
+// screen width
 $iphone6_width: 375px;
 $Nexus_6p_width: 435px;
+$bt_xs_width: 768px;
+
+// color
+$blue: rgba(14, 87, 155, 0.9);
 
 // headerbar 
-$header_bar_height: 14.8vh; //93px; // 2.2cm
+$header_bar_height: 93px; // 2.2cm
 $header_bar_logo_width: 200px;
 
 // join
 $join_page_height: 560px;
 $join_text_from_top: 64px; // 1.6 cm
 $join_text_from_left: 120px; // 3 cm
-$join_text_font_size: 40px;
+$join_text_large_screen_font_size: 40px;
+$join_text_small_screen_font_size: 38px;
 
 $users_text_from_top: 240px; // 6 cm
 $users_text_from_left: 200px; // 5 cm
