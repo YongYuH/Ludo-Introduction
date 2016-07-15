@@ -30,7 +30,7 @@
         @extend %relative;
         @extend %background_img_setting;
         background-size: 35%;
-        height: 290px;
+        height: 200px;
     }
     .game-img {
         @include background_img_content(game);

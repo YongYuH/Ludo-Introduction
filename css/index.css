@@ -255,7 +255,7 @@ body {
 /* line 29, ../sass/components/_core.scss */
 .game-img, .social-img, .expert-img {
   background-size: 35%;
-  height: 290px;
+  height: 200px;
 }
 
 /* line 35, ../sass/components/_core.scss */
