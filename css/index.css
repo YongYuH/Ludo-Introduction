@@ -315,9 +315,20 @@ body {
 
 /* line 13, ../sass/components/_contact-us.scss */
 .contact-us-text h1 {
-  padding-top: 80px;
+  padding-top: 30px;
   padding-bottom: 20px;
   font-size: 30px;
+}
+@media screen and (max-width: 435px) {
+  /* line 12, ../sass/components/_contact-us.scss */
+  .contact-us-text {
+    padding-top: 50px;
+  }
+}
+
+/* line 23, ../sass/components/_contact-us.scss */
+.contact-us-img img {
+  height: 60px;
 }
 
 /* end of contact-us*/

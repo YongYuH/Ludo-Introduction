@@ -1,6 +1,7 @@
 // 1 em = 16px
 // 1 cm = 40px = 2.5em
 $iphone6_width: 375px;
+$Nexus_6p_width: 435px;
 
 // headerbar 
 $header_bar_height: 14.8vh; //93px; // 2.2cm
@@ -34,6 +35,7 @@ $form_text_font-size: 30px;
 
 // contact-us
 $contact-us_page_height: 200px;
-$contact-us_padding_top: 80px;
+$contact-us_large_screen_padding_top: 30px;
+$contact-us_small_screen_padding_top: 50px;
 $contact-us_padding_bottom: 20px;
 $contact-us_text_font-size: 30px;

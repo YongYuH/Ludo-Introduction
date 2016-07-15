@@ -11,9 +11,17 @@
 }
     .contact-us-text {
         h1 {
-            padding-top: $contact-us_padding_top;
+            padding-top: $contact-us_large_screen_padding_top;
             padding-bottom: $contact-us_padding_bottom;
             font-size: $contact-us_text_font-size;
+        }
+        @media screen and (max-width: $Nexus_6p_width) {
+            padding-top: $contact-us_small_screen_padding_top;
+        }
+    }
+    .contact-us-img {
+        img {
+            height: 60px;
         }
     }
 /* end of contact-us*/
