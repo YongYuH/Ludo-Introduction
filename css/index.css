@@ -68,7 +68,7 @@ table {
 }
 
 /* line 9, ../sass/helpers/_placeholders.scss */
-.header-logo-div, .header-logo, .join, .join-button a, .join-img, .introduction, .core, .game-text, .social-text, .expert-text, .game-img, .social-img, .expert-img, .form, .contact-us {
+.header-logo-div, .header-logo, .join, .join-img, .introduction, .core, .game-text, .social-text, .expert-text, .game-img, .social-img, .expert-img, .form, .contact-us {
   position: relative;
 }
 
@@ -210,15 +210,22 @@ body {
   height: 40px;
   margin: 0 auto;
   margin-bottom: 20px;
-  background-color: #0a3f70;
-}
-/* line 47, ../sass/components/_join.scss */
-.join-button a {
   color: white;
   text-decoration: none;
+  background-color: #0a3f70;
+  border: solid;
+  border-color: #0a3f70;
+  border-width: 1px;
+  transition-duration: 0.3s;
+}
+/* line 52, ../sass/components/_join.scss */
+.join-button:hover {
+  color: #0a3f70;
+  background-color: white;
+  transition-duration: 0.3s;
 }
 
-/* line 54, ../sass/components/_join.scss */
+/* line 59, ../sass/components/_join.scss */
 .join-img {
   float: right;
   background-image: url("../images/join.png");
@@ -335,6 +342,13 @@ body {
 /* line 23, ../sass/components/_contact-us.scss */
 .contact-us-img img {
   height: 60px;
+  transition-timing-function: ease-in;
+  transition: 0.2s;
+}
+/* line 28, ../sass/components/_contact-us.scss */
+.contact-us-img img:hover {
+  transform: scale(1.2) translateY(-10px);
+  transition: 0.2s;
 }
 
 /* end of contact-us*/

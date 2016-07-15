@@ -42,12 +42,17 @@
             margin: 0 auto;
             margin-bottom: 20px;
             @extend %text_center;
-            background-color: #0a3f70;
-
-            a {
-                @extend %relative;
-                color: white;
-                text-decoration: none;
+            color: white;
+            text-decoration: none;
+            background-color: $deep_blue;
+            border: solid;
+            border-color: $deep_blue;
+            border-width: 1px;
+            transition-duration: 0.3s;
+            &:hover {
+                color: $deep_blue;
+                background-color: white;
+                transition-duration: 0.3s;
             }
         }
 
