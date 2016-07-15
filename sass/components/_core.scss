@@ -25,6 +25,7 @@
     }
     .game-text, .social-text, .expert-text {
         @extend %relative;
+        margin-bottom: 30px;
     }
     .game-img, .social-img, .expert-img {
         @extend %relative;
