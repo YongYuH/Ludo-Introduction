@@ -4,6 +4,7 @@
 /* introduction */
 .introduction {
     @extend %relative;
+    @extend %as_wide_as_parent;
     @extend %text_center;
 }
 

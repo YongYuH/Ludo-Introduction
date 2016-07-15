@@ -27,4 +27,18 @@
             @extend %background_img_setting;
             background-size: 120%;
         }
+    .log-in {
+        @extend %absolute;
+        top: 30%;
+        right: 3%;
+        border-style: solid;
+        border-color: black;
+        border-width: thin;
+        padding: 10px;
+
+        &:hover{
+            text-decoration: none;
+            background-color: red;
+        }
+    }
 /* end of header bar */

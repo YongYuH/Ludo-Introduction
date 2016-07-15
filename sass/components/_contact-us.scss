@@ -11,7 +11,8 @@
 }
     .contact-us-text {
         h1 {
-            padding: $contact-us_padding_y 0;
+            padding-top: $contact-us_padding_top;
+            padding-bottom: $contact-us_padding_bottom;
             font-size: $contact-us_text_font-size;
         }
     }

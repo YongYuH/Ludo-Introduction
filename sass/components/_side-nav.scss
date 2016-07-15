@@ -1,0 +1,10 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+/* side-nav */
+.side-nav {
+    @extend %as_tall_as_parent;
+    z-index: 3;
+    list-style-type: disc;
+}
+/* end of side-nav */

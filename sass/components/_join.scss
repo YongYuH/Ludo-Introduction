@@ -4,6 +4,7 @@
 /* join */
 .join {
     @extend %relative;
+    @extend %as_wide_as_parent;
     height: $join_page_height;
     margin-top: $header_bar_height;
     background-color: #0e579b;

@@ -4,13 +4,16 @@
 /* core */
 .core {
     @extend %relative;
+    @extend %as_wide_as_parent;
     @extend %text_center;
     background-color: #ff9300;
     color: white;
 }
+.core.row {
+    margin: 0;
+}
     .game, .social, .expert {
         @extend %as_tall_as_parent;
-        border-bottom-style: solid;
         h1 {
             font-size: 180%;
             padding-bottom: 20px;
@@ -20,32 +23,23 @@
             padding-bottom: 6px;
         }
     }
+    .game-text, .social-text, .expert-text {
+        @extend %relative;
+    }
     .game-img, .social-img, .expert-img {
+        @extend %relative;
+        @extend %background_img_setting;
         background-size: 35%;
         height: 290px;
     }
     .game-img {
-        @extend %relative;
-        @extend %background_img_setting;
         @include background_img_content(game);
     }
-    .game-text {
-        @extend %relative;
-    }
     .social-img {
-        @extend %relative;
-        @extend %background_img_setting;
         @include background_img_content(social);
     }
-    .social-text {
-        @extend %relative;
-    }
     .expert-img {
-        @extend %relative;
-        @extend %background_img_setting;
         @include background_img_content(expert);
     }
-    .expert-text {
-        @extend %relative;
-    }
+
 /* end of core */
