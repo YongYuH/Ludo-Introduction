@@ -136,12 +136,11 @@ body {
 
 /* line 27, ../sass/components/_header.scss */
 .header-logo {
-  top: 15px;
   background-image: url("../images/Logo.png");
-  background-size: 120%;
+  background-size: 100%;
 }
 
-/* line 35, ../sass/components/_header.scss */
+/* line 34, ../sass/components/_header.scss */
 .log-in {
   top: 30%;
   right: 3%;
@@ -151,7 +150,7 @@ body {
   padding: 10px;
   transition-duration: 0.3s;
 }
-/* line 44, ../sass/components/_header.scss */
+/* line 43, ../sass/components/_header.scss */
 .log-in:hover {
   text-decoration: none;
   background-color: rgba(14, 87, 155, 0.9);

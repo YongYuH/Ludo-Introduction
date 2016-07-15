@@ -1,8 +1,6 @@
-$('document').ready() {
+$(document).ready(function() {
     // Modify user number
-    $('users-num').text(
-
-    );
+    $('users-num').text();
 
     // Join us link to form animation
     $('a[href*=#]:not([href=#])').click(function() {
@@ -17,4 +15,4 @@ $('document').ready() {
             }
         }
     });
-}
+}); 

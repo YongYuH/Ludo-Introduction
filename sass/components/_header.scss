@@ -26,11 +26,10 @@
     }
         .header-logo {
             @extend %relative;
-            top: 15px;
             @extend %as_tall_as_parent;
             @include background_img_content(Logo);
             @extend %background_img_setting;
-            background-size: 120%;
+            background-size: 100%;
         }
     .log-in {
         @extend %absolute;
