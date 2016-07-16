@@ -307,10 +307,9 @@ body {
 
 /* line 13, ../sass/components/_form.scss */
 .form-text {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 25px;
 }
-/* line 17, ../sass/components/_form.scss */
+/* line 16, ../sass/components/_form.scss */
 .form-text p {
   padding-bottom: 5px;
   font-size: 30px;
@@ -320,20 +319,23 @@ body {
 /* contact-us */
 /* line 5, ../sass/components/_contact-us.scss */
 .contact-us {
-  height: 200px;
+  padding-bottom: 15px;
   background-color: #cfd8dc;
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 13, ../sass/components/_contact-us.scss */
-.contact-us-text h1 {
-  padding-top: 30px;
-  padding-bottom: 20px;
+/* line 12, ../sass/components/_contact-us.scss */
+.contact-us-content {
+  padding-top: 20px;
+}
+/* line 14, ../sass/components/_contact-us.scss */
+.contact-us-content h1 {
+  line-height: 1.8;
   font-size: 30px;
 }
 @media screen and (max-width: 435px) {
   /* line 12, ../sass/components/_contact-us.scss */
-  .contact-us-text {
+  .contact-us-content {
     padding-top: 50px;
   }
 }
@@ -348,6 +350,12 @@ body {
 .contact-us-img img:hover {
   transform: scale(1.2) translateY(-10px);
   transition: 0.2s;
+}
+
+/* line 34, ../sass/components/_contact-us.scss */
+.copyright {
+  padding-top: 20px;
+  color: #b4b4b4;
 }
 
 /* end of contact-us*/

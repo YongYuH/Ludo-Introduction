@@ -9,6 +9,7 @@ $bt_xs_width: 768px;
 // color
 $blue: rgba(14, 87, 155, 0.9);
 $deep_blue: rgba(10, 63, 112, 1);
+$gray: rgba(207, 216, 220, 1);
 
 // headerbar 
 $header_bar_height: 93px; // 2.2cm
@@ -43,7 +44,9 @@ $form_text_font-size: 30px;
 
 // contact-us
 $contact-us_page_height: 200px;
-$contact-us_large_screen_padding_top: 30px;
+$contact-us_large_screen_padding_top: 20px;
 $contact-us_small_screen_padding_top: 50px;
-$contact-us_padding_bottom: 20px;
+$contact-us_padding_bottom: 15px;
+$contact-us-content_line_height: 1.8;
 $contact-us_text_font-size: 30px;
+$copyright_large_screen_padding_top: 20px;
