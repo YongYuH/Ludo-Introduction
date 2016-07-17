@@ -6,7 +6,6 @@
     @extend %relative;
     height: $form_page_height;
     @extend %as_wide_as_parent;
-    @extend %anchor-offset;
     @extend %text_center;
     background-color: #fbc02c;
     color: white;

@@ -5,7 +5,6 @@
 .introduction {
     @extend %relative;
     @extend %as_wide_as_parent;
-    @extend %anchor-offset;
     @extend %text_center;
 }
 
