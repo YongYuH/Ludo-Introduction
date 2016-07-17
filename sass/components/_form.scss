@@ -6,16 +6,19 @@
     @extend %relative;
     height: $form_page_height;
     @extend %as_wide_as_parent;
+    @extend %anchor-offset;
     @extend %text_center;
     background-color: #fbc02c;
     color: white;
 }
     .form-text {
         padding: 30px 25px;
-        
         p {
             padding-bottom: 5px;
-            font-size: $form_text_font-size;
+            font-size: $form-text_font-size;
         }
+    }
+    .typeform-div {
+        margin: 0 25px;
     }
 /* end of form */

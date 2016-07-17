@@ -3,8 +3,20 @@
 @import "helpers/placeholders";
 /* side-nav */
 .side-nav {
-    @extend %as_tall_as_parent;
-    z-index: 3;
-    list-style-type: disc;
+    @extend %fixed;
+    @extend %anchor-offset;
+    height: 500px;
+    width: 20px;
+    z-index: 2;
+    @extend %text_center;
+    
+    ul {
+        list-style: disc;
+    }
+    
+    a {
+        width: 10px;
+    }
 }
+
 /* end of side-nav */

@@ -5,6 +5,7 @@
 .introduction {
     @extend %relative;
     @extend %as_wide_as_parent;
+    @extend %anchor-offset;
     @extend %text_center;
 }
 
@@ -13,10 +14,10 @@
         line-height: 1.2;
 
         p {
-            padding-bottom: $introduction_text_padding_bottom;
-            font-size: $introduction_text_font_size;
+            padding-bottom: $introduction-text_padding_bottom;
+            font-size: $introduction-text_font_size;
             color: rgba(0,0,0,0.8);
-            font-weight: 500;
+            @extend %bold_font;
         }
     }
 /* end of introduction */

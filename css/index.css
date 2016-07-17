@@ -57,63 +57,63 @@ table {
 }
 
 /* end of reset of css */
-/* line 1, ../sass/helpers/_placeholders.scss */
-.header {
+/* line 3, ../sass/helpers/_placeholders.scss */
+.header, .side-nav {
   position: fixed;
 }
 
-/* line 5, ../sass/helpers/_placeholders.scss */
+/* line 7, ../sass/helpers/_placeholders.scss */
 .log-in {
   position: absolute;
 }
 
-/* line 9, ../sass/helpers/_placeholders.scss */
+/* line 11, ../sass/helpers/_placeholders.scss */
 .header-logo-div, .header-logo, .join, .join-img, .introduction, .core, .game-text, .social-text, .expert-text, .game-img, .social-img, .expert-img, .form, .contact-us {
   position: relative;
 }
 
-/* line 13, ../sass/helpers/_placeholders.scss */
+/* line 15, ../sass/helpers/_placeholders.scss */
 .header, .join, .introduction, .core, .form {
   width: 100%;
 }
 
-/* line 17, ../sass/helpers/_placeholders.scss */
-.header-logo-div, .header-logo, .side-nav, .join-img, .game, .social, .expert {
+/* line 19, ../sass/helpers/_placeholders.scss */
+.header-logo-div, .header-logo, .join-img, .game, .social, .expert {
   height: 100%;
 }
 
-/* line 21, ../sass/helpers/_placeholders.scss */
-.join-text, .join-button, .introduction, .core, .form, .contact-us {
+/* line 23, ../sass/helpers/_placeholders.scss */
+.side-nav, .join, .introduction, .core, .form, .contact-us {
+  top: 93px;
+}
+
+/* line 27, ../sass/helpers/_placeholders.scss */
+.side-nav, .join-text, .join-button, .introduction, .core, .form, .contact-us {
   text-align: center;
 }
 
-/* line 25, ../sass/helpers/_placeholders.scss */
-.welcome-text p {
+/* line 31, ../sass/helpers/_placeholders.scss */
+.users-text p, .introduction-text p {
   font-weight: bold;
 }
 
-/* line 37, ../sass/helpers/_placeholders.scss */
-body {
-  font-family: 'Trebuchet MS';
-}
-
-/* line 41, ../sass/helpers/_placeholders.scss */
-.welcome-text p, .users-text p {
-  font-family: Verdana;
-}
-
-/* line 49, ../sass/helpers/_placeholders.scss */
+/* line 55, ../sass/helpers/_placeholders.scss */
 .header-logo, .join-img, .game-img, .social-img, .expert-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+/* line 3, ../sass/helpers/_default.scss */
+body {
+  font-family: Exo;
+}
+
 /* header bar */
 /* line 5, ../sass/components/_header.scss */
 .header {
   top: 0;
-  z-index: 2;
+  z-index: 5;
   height: 93px;
   background-color: rgba(255, 255, 255, 0.98);
   border-width: 1px;
@@ -124,7 +124,7 @@ body {
 
 /* line 17, ../sass/components/_header.scss */
 .header-logo-div {
-  width: 200px;
+  width: 250px;
   margin: 0 auto;
 }
 @media screen and (max-width: 375px) {
@@ -148,9 +148,10 @@ body {
   border-color: rgba(14, 87, 155, 0.9);
   border-width: thin;
   padding: 10px;
+  font-family: Verdana, Tahoma, Geneva, sans-serif;
   transition-duration: 0.3s;
 }
-/* line 43, ../sass/components/_header.scss */
+/* line 44, ../sass/components/_header.scss */
 .log-in:hover {
   text-decoration: none;
   background-color: rgba(14, 87, 155, 0.9);
@@ -162,8 +163,17 @@ body {
 /* side-nav */
 /* line 5, ../sass/components/_side-nav.scss */
 .side-nav {
-  z-index: 3;
-  list-style-type: disc;
+  height: 500px;
+  width: 20px;
+  z-index: 2;
+}
+/* line 13, ../sass/components/_side-nav.scss */
+.side-nav ul {
+  list-style: disc;
+}
+/* line 17, ../sass/components/_side-nav.scss */
+.side-nav a {
+  width: 10px;
 }
 
 /* end of side-nav */
@@ -171,8 +181,7 @@ body {
 /* line 5, ../sass/components/_join.scss */
 .join {
   height: 560px;
-  margin-top: 93px;
-  background-color: rgba(14, 87, 155, 0.9);
+  background-color: #0e579b;
   color: white;
 }
 
@@ -183,7 +192,9 @@ body {
 /* line 18, ../sass/components/_join.scss */
 .welcome-text p {
   line-height: 120%;
-  font-size: 40px;
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 48px;
 }
 @media screen and (max-width: 768px) {
   /* line 18, ../sass/components/_join.scss */
@@ -207,24 +218,29 @@ body {
 .join-button {
   width: 96px;
   height: 40px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  color: white;
+  padding: 8px;
   text-decoration: none;
-  background-color: #0a3f70;
+  background-color: #0e579b;
+  color: white;
+  font-size: 24px;
   border: solid;
-  border-color: #0a3f70;
+  border-color: #0e579b;
   border-width: 1px;
   transition-duration: 0.3s;
 }
 /* line 52, ../sass/components/_join.scss */
 .join-button:hover {
-  color: #0a3f70;
+  color: #0e579b;
   background-color: white;
   transition-duration: 0.3s;
 }
 
-/* line 59, ../sass/components/_join.scss */
+/* line 58, ../sass/components/_join.scss */
+.join-button.btn {
+  line-height: 1;
+}
+
+/* line 61, ../sass/components/_join.scss */
 .join-img {
   float: right;
   background-image: url("../images/join.png");
@@ -233,17 +249,16 @@ body {
 
 /* end of join */
 /* introduction */
-/* line 11, ../sass/components/_introduction.scss */
+/* line 12, ../sass/components/_introduction.scss */
 .introduction-text {
   margin: 40px 25px;
   line-height: 1.2;
 }
-/* line 15, ../sass/components/_introduction.scss */
+/* line 16, ../sass/components/_introduction.scss */
 .introduction-text p {
   padding-bottom: 6px;
   font-size: 30px;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 500;
 }
 
 /* end of introduction */
@@ -254,44 +269,44 @@ body {
   color: white;
 }
 
-/* line 12, ../sass/components/_core.scss */
+/* line 13, ../sass/components/_core.scss */
 .core.row {
   margin: 0;
 }
 
-/* line 17, ../sass/components/_core.scss */
+/* line 18, ../sass/components/_core.scss */
 .game h1, .social h1, .expert h1 {
   font-size: 180%;
   padding-bottom: 20px;
 }
-/* line 21, ../sass/components/_core.scss */
+/* line 22, ../sass/components/_core.scss */
 .game p, .social p, .expert p {
   font-size: 120%;
   padding-bottom: 6px;
 }
 
-/* line 26, ../sass/components/_core.scss */
+/* line 27, ../sass/components/_core.scss */
 .game-text, .social-text, .expert-text {
   margin-bottom: 30px;
 }
 
-/* line 30, ../sass/components/_core.scss */
+/* line 31, ../sass/components/_core.scss */
 .game-img, .social-img, .expert-img {
   background-size: 35%;
   height: 200px;
 }
 
-/* line 36, ../sass/components/_core.scss */
+/* line 37, ../sass/components/_core.scss */
 .game-img {
   background-image: url("../images/game.png");
 }
 
-/* line 39, ../sass/components/_core.scss */
+/* line 40, ../sass/components/_core.scss */
 .social-img {
   background-image: url("../images/social.png");
 }
 
-/* line 42, ../sass/components/_core.scss */
+/* line 43, ../sass/components/_core.scss */
 .expert-img {
   background-image: url("../images/expert.png");
 }
@@ -305,7 +320,7 @@ body {
   color: white;
 }
 
-/* line 13, ../sass/components/_form.scss */
+/* line 14, ../sass/components/_form.scss */
 .form-text {
   padding: 30px 25px;
 }
@@ -313,6 +328,11 @@ body {
 .form-text p {
   padding-bottom: 5px;
   font-size: 30px;
+}
+
+/* line 21, ../sass/components/_form.scss */
+.typeform-div {
+  margin: 0 25px;
 }
 
 /* end of form */
@@ -324,35 +344,35 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 12, ../sass/components/_contact-us.scss */
+/* line 13, ../sass/components/_contact-us.scss */
 .contact-us-content {
   padding-top: 20px;
 }
-/* line 14, ../sass/components/_contact-us.scss */
+/* line 15, ../sass/components/_contact-us.scss */
 .contact-us-content h1 {
   line-height: 1.8;
   font-size: 30px;
 }
 @media screen and (max-width: 435px) {
-  /* line 12, ../sass/components/_contact-us.scss */
+  /* line 13, ../sass/components/_contact-us.scss */
   .contact-us-content {
     padding-top: 50px;
   }
 }
 
-/* line 23, ../sass/components/_contact-us.scss */
+/* line 24, ../sass/components/_contact-us.scss */
 .contact-us-img img {
   height: 60px;
   transition-timing-function: ease-in;
   transition: 0.2s;
 }
-/* line 28, ../sass/components/_contact-us.scss */
+/* line 29, ../sass/components/_contact-us.scss */
 .contact-us-img img:hover {
   transform: scale(1.2) translateY(-10px);
   transition: 0.2s;
 }
 
-/* line 34, ../sass/components/_contact-us.scss */
+/* line 35, ../sass/components/_contact-us.scss */
 .copyright {
   padding-top: 20px;
   color: #b4b4b4;

@@ -4,6 +4,7 @@
 /* contact-us */
 .contact-us {
     @extend %relative;
+    @extend %anchor-offset;
     @extend %text_center;
     padding-bottom: $contact-us_padding_bottom;
     background-color: $gray;

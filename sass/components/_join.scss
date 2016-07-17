@@ -5,46 +5,46 @@
 .join {
     @extend %relative;
     @extend %as_wide_as_parent;
-    height: $join_page_height;
-    margin-top: $header_bar_height;
-    background-color: $blue;
+    height: $join-page_height;
+    @extend %anchor-offset;
+    background-color: $deep_blue;
     color: white;
 }
     .join-text {
         @extend %text_center;
     }
         .welcome-text {
-            margin-top: $join_text_from_top;
+            margin-top: $join-text_from_top;
             p {
                 line-height: 120%;
-                @extend %Verdana_font;
-                @extend %bold_font;
-                font-size: $join_text_large_screen_font_size;
+                font-family: "Exo 2";
+                font-weight: 600;
+                font-size: $join-text_large_screen_font_size;
                 @media screen and (max-width: $bt_xs_width) {
-                    font-size: $join_text_small_screen_font_size;
+                    font-size: $join-text_small_screen_font_size;
                 }
             }
         }
         .users-text {
             p {
                 line-height: 120%;
-                @extend %Verdana_font;
-                font-size: $users_text_font_size;
+                font-size: $users-text_font_size;
+                @extend %bold_font;
                 .users-num {
                     line-height: 130%;
-                    font-size: $users_num_font_size;
+                    font-size: $users-num_font_size;
                 }
             }
         }
         .join-button {
             width: $button_width;
             height: $button_height;
-            margin: 0 auto;
-            margin-bottom: 20px;
+            padding: 8px;
             @extend %text_center;
-            color: white;
             text-decoration: none;
             background-color: $deep_blue;
+            color: white;
+            font-size: $button_font_size;
             border: solid;
             border-color: $deep_blue;
             border-width: 1px;
@@ -55,7 +55,9 @@
                 transition-duration: 0.3s;
             }
         }
-
+        .join-button.btn {
+            line-height: 1;
+        }
     .join-img {
         @extend %relative;
         float: right;

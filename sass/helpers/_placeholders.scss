@@ -1,3 +1,5 @@
+@import "helpers/variables";
+
 %fixed {
     position: fixed;
 }
@@ -16,6 +18,10 @@
 
 %as_tall_as_parent {
     height: 100%;
+}
+
+%anchor-offset {
+    top: $header_bar_height;
 }
 
 %text_center {
