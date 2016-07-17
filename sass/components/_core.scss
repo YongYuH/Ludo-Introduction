@@ -14,18 +14,22 @@
 }
     .game, .social, .expert {
         @extend %as_tall_as_parent;
-        h1 {
-            font-size: 180%;
-            padding-bottom: 20px;
-        }
-        p {
-            font-size: 120%;
-            padding-bottom: 6px;
-        }
     }
     .game-text, .social-text, .expert-text {
         @extend %relative;
         margin-bottom: 30px;
+        line-height: 1.3;
+        @extend %bold_font;
+
+        .core-text-title {
+            @extend %font_Exo2;
+            font-size: $core-text-title_font_size;
+            padding-bottom: 20px;
+        }
+        .core-text-content {
+            font-size: $core-text-content_font_size;
+            padding-bottom: 6px;
+        }
     }
     .game-img, .social-img, .expert-img {
         @extend %relative;

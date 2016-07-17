@@ -17,7 +17,7 @@
             margin-top: $join-text_from_top;
             p {
                 line-height: 120%;
-                font-family: "Exo 2";
+                @extend %font_Exo2;
                 font-weight: 600;
                 font-size: $join-text_large_screen_font_size;
                 @media screen and (max-width: $bt_xs_width) {
