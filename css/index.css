@@ -127,34 +127,28 @@ body {
   width: 250px;
   margin: 0 auto;
 }
-@media screen and (max-width: 375px) {
-  /* line 17, ../sass/components/_header.scss */
-  .header-logo-div {
-    margin: 0;
-  }
-}
 
-/* line 27, ../sass/components/_header.scss */
+/* line 23, ../sass/components/_header.scss */
 .header-logo {
   background-image: url("../images/Logo.png");
   background-size: 100%;
 }
 
-/* line 34, ../sass/components/_header.scss */
+/* line 30, ../sass/components/_header.scss */
 .log-in {
   top: 30%;
   right: 3%;
   border-style: solid;
-  border-color: rgba(14, 87, 155, 0.9);
+  border-color: #0e579b;
   border-width: thin;
   padding: 10px;
   font-family: Verdana, Tahoma, Geneva, sans-serif;
   transition-duration: 0.3s;
 }
-/* line 44, ../sass/components/_header.scss */
+/* line 40, ../sass/components/_header.scss */
 .log-in:hover {
   text-decoration: none;
-  background-color: rgba(14, 87, 155, 0.9);
+  background-color: #0e579b;
   color: white;
   transition-duration: 0.3s;
 }
@@ -221,17 +215,17 @@ body {
   height: 40px;
   padding: 8px;
   text-decoration: none;
-  background-color: #0e579b;
+  background-color: #0a3f70;
   color: white;
   font-size: 24px;
   border: solid;
-  border-color: #0e579b;
+  border-color: #0a3f70;
   border-width: 1px;
   transition-duration: 0.3s;
 }
 /* line 52, ../sass/components/_join.scss */
 .join-button:hover {
-  color: #0e579b;
+  color: #0a3f70;
   background-color: white;
   transition-duration: 0.3s;
 }

@@ -19,10 +19,6 @@
         @extend %as_tall_as_parent;
         width: $header_bar_logo_width;
         margin: 0 auto;
-
-        @media screen and (max-width: $iphone6_width) {
-            margin: 0;
-        }
     }
         .header-logo {
             @extend %relative;
