@@ -162,12 +162,32 @@ body {
   z-index: 2;
 }
 /* line 12, ../sass/components/_side-nav.scss */
-.side-nav ul {
-  list-style: disc;
-}
-/* line 16, ../sass/components/_side-nav.scss */
 .side-nav a {
-  width: 10px;
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 10px 8px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+/* line 22, ../sass/components/_side-nav.scss */
+.side-nav a:before {
+  margin-top: -2px;
+  margin-left: -2px;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(65, 180, 230, 0.8);
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+}
+/* line 35, ../sass/components/_side-nav.scss */
+.side-nav a:hover, .side-nav a.active {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* end of side-nav */
@@ -245,7 +265,7 @@ body {
 /* introduction */
 /* line 11, ../sass/components/_introduction.scss */
 .introduction-text {
-  margin: 40px 25px;
+  padding: 40px 25px;
   line-height: 1.2;
 }
 /* line 15, ../sass/components/_introduction.scss */
