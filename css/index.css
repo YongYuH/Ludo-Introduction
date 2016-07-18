@@ -141,14 +141,26 @@ body {
   border-bottom-style: solid;
   border-bottom-color: whitesmoke;
   box-shadow: 0 1px 5px #505050;
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+/* line 17, ../sass/components/_header.scss */
+.header:hover {
+  background-color: rgba(207, 216, 220, 0.98);
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
 }
 
-/* line 17, ../sass/components/_header.scss */
+/* line 22, ../sass/components/_header.scss */
 .header-logo-div {
   width: 250px;
 }
 
-/* line 23, ../sass/components/_header.scss */
+/* line 28, ../sass/components/_header.scss */
 .header-logo {
   background-image: url("../images/Logo.png");
 }
@@ -245,30 +257,30 @@ body {
   border-color: #0a3f70;
   border-width: 1px;
   padding: 8px;
-  background-color: #0a3f70;
-  color: white;
   font-size: 24px;
-  transition-duration: 0.3;
-  -moz-transition-duration: 0.3;
-  -webkit-transition-duration: 0.3;
-  -o-transition-duration: 0.3;
-}
-/* line 50, ../sass/components/_join.scss */
-.join-button:hover {
-  color: #0a3f70;
-  background-color: white;
-  transition-duration: 0.3;
-  -moz-transition-duration: 0.3;
-  -webkit-transition-duration: 0.3;
-  -o-transition-duration: 0.3;
 }
 
-/* line 56, ../sass/components/_join.scss */
+/* line 51, ../sass/components/_join.scss */
 .join-button.btn {
   line-height: 1;
+  color: white;
+  background-color: #0a3f70;
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+/* line 58, ../sass/components/_join.scss */
+.join-button.btn:hover {
+  color: #0a3f70;
+  background-color: white;
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
 }
 
-/* line 60, ../sass/components/_join.scss */
+/* line 64, ../sass/components/_join.scss */
 .join-img {
   float: right;
   background-image: url("../images/join.png");

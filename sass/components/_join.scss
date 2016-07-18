@@ -42,20 +42,24 @@
 
             @extend %text_center;
             @extend %remove_text-decoration;
-            background-color: $deep_blue;
-            color: white;
             font-size: $join-button_font-size;
 
-            @include transition-duration(0.3);
             &:hover {
-                color: $deep_blue;
-                background-color: white;
-                @include transition-duration(0.3);
+
             }
         }
         .join-button.btn {
             // overwrite bootstrap button line-height
             line-height: 1;
+            color: white;
+            background-color: $deep_blue;
+            @include transition-duration(0.2s);
+
+            &:hover {
+                color: $deep_blue;
+                background-color: white;
+                @include transition-duration(0.2s);
+            }
         }
     .join-img {
         @extend %relative;
