@@ -371,7 +371,7 @@ body {
 @media screen and (max-width: 768px) {
   /* line 43, ../sass/components/_core.scss */
   .game-img, .social-img, .expert-img {
-    background-size: 20%;
+    background-size: 30%;
   }
 }
 
