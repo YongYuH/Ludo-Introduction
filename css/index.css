@@ -88,7 +88,7 @@ table {
 }
 
 /* line 15, ../sass/helpers/_placeholders.scss */
-.header-logo-div {
+.header-logo-div, .arrows-div {
   margin: 0 auto;
 }
 
@@ -399,16 +399,22 @@ body {
   color: white;
 }
 
-/* line 33, ../sass/components/_form.scss */
+/* line 29, ../sass/components/_form.scss */
+.arrows-div {
+  width: 60px;
+  height: 70px;
+}
+
+/* line 39, ../sass/components/_form.scss */
 .arrows {
   width: 60px;
-  height: 72px;
+  height: 70px;
   position: absolute;
   left: 50%;
   margin-left: -30px;
 }
 
-/* line 41, ../sass/components/_form.scss */
+/* line 47, ../sass/components/_form.scss */
 .arrows path {
   stroke: white;
   fill: transparent;
@@ -445,21 +451,21 @@ body {
     opacity: 0;
   }
 }
-/* line 65, ../sass/components/_form.scss */
+/* line 71, ../sass/components/_form.scss */
 .arrows path.a1 {
   animation-delay: -1s;
   -webkit-animation-delay: -1s;
   /* Safari and Chrome */
 }
 
-/* line 70, ../sass/components/_form.scss */
+/* line 76, ../sass/components/_form.scss */
 .arrows path.a2 {
   animation-delay: -0.5s;
   -webkit-animation-delay: -0.5s;
   /* Safari and Chrome */
 }
 
-/* line 75, ../sass/components/_form.scss */
+/* line 81, ../sass/components/_form.scss */
 .arrows path.a3 {
   animation-delay: 0s;
   -webkit-animation-delay: 0s;
