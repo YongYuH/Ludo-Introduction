@@ -6,10 +6,11 @@
     @extend %relative;
     @extend %as_wide_as_parent;
     @extend %text_center;
-    background-color: #ff9300;
+    background-color: $deep_orange;
     color: white;
 }
 .core.row {
+    // overwrite bootstrap margin
     margin: 0;
 }
     .game, .social, .expert {
@@ -17,18 +18,20 @@
     }
     .game-text, .social-text, .expert-text {
         @extend %relative;
-        margin-bottom: 30px;
-        line-height: 1.3;
+        margin-bottom: $core-text_margin-bottom;
+        line-height: $core-text_line-height;
         @extend %bold_font;
 
         .core-text-title {
             @extend %font_Exo2;
             font-size: $core-text-title_font-size;
-            padding-bottom: 20px;
+            padding-bottom: $core-text-title_padding-bottom;
         }
         .core-text-content {
-            font-size: $core-text-content_font-size_desktop;
-            padding-bottom: 6px;
+            padding-bottom: $core-text-content_padding-bottom;
+            @media screen and (min-width: $bt_xs_width) {
+                font-size: $core-text-content_font-size_desktop;
+            }
             @media screen and (max-width: $bt_xs_width) {
                 font-size: $core-text-content_font-size_mobile;
             }
@@ -37,17 +40,10 @@
     .game-img, .social-img, .expert-img {
         @extend %relative;
         @extend %background_img_setting;
-        background-size: 35%;
-        height: 200px;
+        height: $core-img_height;
+        background-size: $core-img_size;
     }
-    .game-img {
-        @include background_img_content(game);
-    }
-    .social-img {
-        @include background_img_content(social);
-    }
-    .expert-img {
-        @include background_img_content(expert);
-    }
-
+    .game-img { @include background_img_content(game); }
+    .social-img { @include background_img_content(social); }
+    .expert-img { @include background_img_content(expert); }
 /* end of core */

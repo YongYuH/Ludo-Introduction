@@ -5,57 +5,56 @@
 .join {
     @extend %relative;
     @extend %as_wide_as_parent;
-    margin-top: $header_bar_height;
+    margin-top: $header_height;
     height: $join-page_height;
     background-color: $blue;
     color: white;
 }
     .join-text {
         @extend %text_center;
+        line-height: $join-text_line-height;
+        @extend %bold_font;
     }
         .welcome-text {
-            margin-top: $join-text_from_top;
-            p {
-                line-height: 120%;
-                @extend %font_Exo2;
-                font-weight: 600;
-                font-size: $join-text_font_size_desktop;
-                @media screen and (max-width: $bt_xs_width) {
-                    font-size: $join-text_font_size_mobile;
-                }
+            margin-top: $welcome-text_from_top;
+            @extend %font_Exo2;
+            @media screen and (min-width: $bt_xs_width) {
+                font-size: $welcome-text_font-size_desktop;
+            }
+            @media screen and (max-width: $bt_xs_width) {
+                font-size: $welcome-text_font-size_mobile;
             }
         }
         .users-text {
-            p {
-                line-height: 120%;
-                font-size: $users-text_font_size;
-                @extend %bold_font;
-                .users-num {
-                    line-height: 130%;
-                    font-size: $users-num_font_size;
-                }
+            font-size: $users-text_font-size;
+            .users-num {
+                line-height: $users-num_line-height;
+                font-size: $users-num_font-size;
             }
         }
         .join-button {
-            width: $button_width;
-            height: $button_height;
-            padding: 8px;
-            @extend %text_center;
-            text-decoration: none;
-            background-color: $deep_blue;
-            color: white;
-            font-size: $button_font_size;
+            width: $join-button_width;
+            height: $join-button_height;
             border: solid;
             border-color: $deep_blue;
-            border-width: 1px;
-            transition-duration: 0.3s;
+            border-width: $join-button_border-width;
+            padding: $join-button_padding;
+
+            @extend %text_center;
+            @extend %remove_text-decoration;
+            background-color: $deep_blue;
+            color: white;
+            font-size: $join-button_font-size;
+
+            @include transition-duration(0.3);
             &:hover {
                 color: $deep_blue;
                 background-color: white;
-                transition-duration: 0.3s;
+                @include transition-duration(0.3);
             }
         }
         .join-button.btn {
+            // overwrite bootstrap button line-height
             line-height: 1;
         }
     .join-img {
@@ -64,6 +63,5 @@
         @extend %as_tall_as_parent;
         @extend %background_img_setting;
         @include background_img_content(join);
-        opacity: 0.9;
     }
 /* end of join */

@@ -7,20 +7,22 @@
     @extend %as_wide_as_parent;
     @extend %text_center;
 }
-
     .introduction-text {
-        padding: $introduction_padding_y $padding_x;
-        line-height: 1.2;
+        padding: $introduction_padding_y 0;
+        @extend %padding_x;
         @extend %bold_font;
+        line-height: $introduction-text_line-height;
     }
         .introduction-text-title {
             padding-bottom: $introduction-text-title_padding-bottom;
-            font-size: $introduction-text-title_font_size;
+            font-size: $introduction-text-title_font-size;
             color: $black;
         }
         .introduction-text-content {
-            font-size: $introduction-text-content_font_size_desktop;
-            color: gray;
+            color: $deep_gray;
+            @media screen and (min-width: $bt_xs_width) {
+                font-size: $introduction-text-content_font-size_desktop;
+            }
             @media screen and (max-width: $bt_xs_width) {
                 font-size: $introduction-text-content_font-size_mobile;
             }

@@ -4,16 +4,17 @@
 /* side-nav */
 .side-nav {
     @extend %fixed;
-    top: $header_bar_height;
+    top: $header_height;
     height: 100%;
-    width: 20px;
-    z-index: 2;
+    width: $side-nav_width;
+    z-index: $side-nav_depth;
     @extend %text_center;
     
     .side-nav-button{
         @extend %absolute;
         top: 33%;
     }
+        // dot on side nav bar
         a {
             display: block;
             position: relative;
@@ -38,7 +39,7 @@
         }
 
         a:hover, a.active {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: $black;
         }
 }
 /* end of side-nav */
