@@ -23,12 +23,15 @@
 
         .core-text-title {
             @extend %font_Exo2;
-            font-size: $core-text-title_font_size;
+            font-size: $core-text-title_font-size;
             padding-bottom: 20px;
         }
         .core-text-content {
-            font-size: $core-text-content_font_size;
+            font-size: $core-text-content_font-size_desktop;
             padding-bottom: 6px;
+            @media screen and (max-width: $bt_xs_width) {
+                font-size: $core-text-content_font-size_mobile;
+            }
         }
     }
     .game-img, .social-img, .expert-img {

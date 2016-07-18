@@ -19,9 +19,9 @@
                 line-height: 120%;
                 @extend %font_Exo2;
                 font-weight: 600;
-                font-size: $join-text_large_screen_font_size;
+                font-size: $join-text_font_size_desktop;
                 @media screen and (max-width: $bt_xs_width) {
-                    font-size: $join-text_small_screen_font_size;
+                    font-size: $join-text_font_size_mobile;
                 }
             }
         }

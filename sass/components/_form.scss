@@ -12,11 +12,13 @@
 }
     .form-text {
         padding: 30px 25px;
-        p {
-            padding-bottom: 5px;
-            line-height: 1.3;
-            @extend %bold_font;
-            font-size: $form-text_font-size;
+        padding-bottom: 30px;
+        line-height: 1.3;
+        @extend %bold_font;
+        font-size: $form-text_font-size_desktop;
+
+        @media screen and (max-width: $bt_xs_width) {
+            font-size: $form-text_font-size_mobile;
         }
     }
     .typeform-div {

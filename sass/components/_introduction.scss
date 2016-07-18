@@ -9,14 +9,20 @@
 }
 
     .introduction-text {
-        padding: $introduction_padding_y 25px;
+        padding: $introduction_padding_y $padding_x;
         line-height: 1.2;
-
-        p {
-            padding-bottom: $introduction-text_padding_bottom;
-            font-size: $introduction-text_font_size;
-            color: rgba(0,0,0,0.8);
-            @extend %bold_font;
-        }
+        @extend %bold_font;
     }
+        .introduction-text-title {
+            padding-bottom: $introduction-text-title_padding-bottom;
+            font-size: $introduction-text-title_font_size;
+            color: $black;
+        }
+        .introduction-text-content {
+            font-size: $introduction-text-content_font_size_desktop;
+            color: gray;
+            @media screen and (max-width: $bt_xs_width) {
+                font-size: $introduction-text-content_font-size_mobile;
+            }
+        }
 /* end of introduction */
