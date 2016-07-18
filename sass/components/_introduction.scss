@@ -8,8 +8,9 @@
     @extend %text_center;
 }
     .introduction-text {
-        padding: $introduction_padding_y 0;
         @extend %padding_x;
+        padding-top: $introduction_padding_y;
+        padding-bottom: $introduction_padding_y;
         @extend %bold_font;
         line-height: $introduction-text_line-height;
     }
