@@ -373,7 +373,7 @@ body {
 .form {
   height: 750px;
   background-color: #fbc02c;
-  color: white;
+  color: whitesmoke;
 }
 
 /* line 13, ../sass/components/_form.scss */
@@ -393,6 +393,77 @@ body {
   .form-text {
     font-size: 18px;
   }
+}
+/* line 25, ../sass/components/_form.scss */
+.form-text .fill_in {
+  color: white;
+}
+
+/* line 33, ../sass/components/_form.scss */
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+}
+
+/* line 41, ../sass/components/_form.scss */
+.arrows path {
+  stroke: white;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 65, ../sass/components/_form.scss */
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari and Chrome */
+}
+
+/* line 70, ../sass/components/_form.scss */
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari and Chrome */
+}
+
+/* line 75, ../sass/components/_form.scss */
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari and Chrome */
 }
 
 /* end of form */
