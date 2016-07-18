@@ -1,0 +1,45 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+/* side-nav */
+.side-nav {
+    @extend %fixed;
+    top: $header_height;
+    height: 100%;
+    width: $side-nav_width;
+    z-index: $side-nav_depth;
+    @extend %text_center;
+    
+    .side-nav-button{
+        @extend %absolute;
+        top: 33%;
+    }
+        // dot on side nav bar
+        a {
+            display: block;
+            position: relative;
+            width: 20px;
+            height: 20px;
+            margin: 10px 8px;
+            border: 6px solid transparent;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+        a:before {
+            margin-top: -2px;
+            margin-left: -2px;
+            width: 5px;
+            height: 5px;
+            background-color: rgba(65, 180, 230, 0.8);
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            content: "";
+        }
+
+        a:hover, a.active {
+            background-color: $black;
+        }
+}
+/* end of side-nav */

@@ -57,147 +57,272 @@ table {
 }
 
 /* end of reset of css */
-/* line 1, ../sass/helpers/_placeholders.scss */
-.header {
+/* line 4, ../sass/helpers/_placeholders.scss */
+.header, .side-nav {
   position: fixed;
 }
 
 /* line 5, ../sass/helpers/_placeholders.scss */
-.join-text, .users, .join-button {
+.side-nav .side-nav-button {
   position: absolute;
 }
 
-/* line 9, ../sass/helpers/_placeholders.scss */
-.header-logo-div, .header-logo, .join, .join-button a, .join-img, .introduction, .core, .game-img, .game-text, .social-img, .social-text, .expert-img, .expert-text, .form, .contact-us {
+/* line 6, ../sass/helpers/_placeholders.scss */
+.header-logo-div, .header-logo, .join, .join-img, .introduction, .core, .game-text, .social-text, .expert-text, .game-img, .social-img, .expert-img, .form, .contact-us {
   position: relative;
 }
 
-/* line 13, ../sass/helpers/_placeholders.scss */
-.header, .header-logo, .form {
+/* line 9, ../sass/helpers/_placeholders.scss */
+.header, .join, .introduction, .core, .form {
   width: 100%;
 }
 
-/* line 17, ../sass/helpers/_placeholders.scss */
+/* line 11, ../sass/helpers/_placeholders.scss */
 .header-logo-div, .header-logo, .join-img, .game, .social, .expert {
   height: 100%;
 }
 
+/* line 12, ../sass/helpers/_placeholders.scss */
+.typeform-div {
+  height: 50%;
+}
+
+/* line 15, ../sass/helpers/_placeholders.scss */
+.header-logo-div, .arrows-div {
+  margin: 0 auto;
+}
+
 /* line 21, ../sass/helpers/_placeholders.scss */
-.users p, .join-button, .introduction, .core, .form, .contact-us {
-  text-align: center;
+.introduction-text, .form-text, .typeform-div {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
-/* line 25, ../sass/helpers/_placeholders.scss */
-.join-text p {
-  font-weight: bold;
-}
-
-/* line 37, ../sass/helpers/_placeholders.scss */
-body {
-  font-family: 'Trebuchet MS';
-}
-
-/* line 41, ../sass/helpers/_placeholders.scss */
-.join-text p, .users p {
-  font-family: Verdana;
-}
-
-/* line 49, ../sass/helpers/_placeholders.scss */
+/* line 27, ../sass/helpers/_placeholders.scss */
 .header-logo, .join-img, .game-img, .social-img, .expert-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+/* line 34, ../sass/helpers/_placeholders.scss */
+.side-nav, .join-text, .join-button, .introduction, .core, .form, .contact-us {
+  text-align: center;
+}
+
+/* line 35, ../sass/helpers/_placeholders.scss */
+.join-button {
+  text-decoration: none;
+}
+
+/* line 36, ../sass/helpers/_placeholders.scss */
+.join-text, .introduction-text, .game-text, .social-text, .expert-text, .form-text {
+  font-weight: bold;
+}
+
+/* line 37, ../sass/helpers/_placeholders.scss */
+.welcome-text, .game-text .core-text-title, .social-text .core-text-title, .expert-text .core-text-title {
+  font-family: 'EXO 2';
+}
+
+/* line 3, ../sass/helpers/_default.scss */
+body {
+  font-family: Exo;
+}
+
 /* header bar */
 /* line 5, ../sass/components/_header.scss */
 .header {
   top: 0;
-  z-index: 2;
-  height: 88px;
-  background-color: white;
+  z-index: 5;
+  height: 93px;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: whitesmoke;
+  box-shadow: 0 1px 5px #505050;
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+/* line 17, ../sass/components/_header.scss */
+.header:hover {
+  background-color: rgba(207, 216, 220, 0.98);
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
 }
 
-/* line 13, ../sass/components/_header.scss */
+/* line 22, ../sass/components/_header.scss */
 .header-logo-div {
-  display: inline-block;
   width: 250px;
 }
 
-/* line 19, ../sass/components/_header.scss */
+/* line 28, ../sass/components/_header.scss */
 .header-logo {
-  display: inline-block;
-  z-index: 3;
-  padding-top: 30px;
   background-image: url("../images/Logo.png");
-  background-size: 100%;
 }
 
 /* end of header bar */
+/* side-nav */
+/* line 5, ../sass/components/_side-nav.scss */
+.side-nav {
+  top: 93px;
+  height: 100%;
+  width: 20px;
+  z-index: 2;
+}
+/* line 13, ../sass/components/_side-nav.scss */
+.side-nav .side-nav-button {
+  top: 33%;
+}
+/* line 18, ../sass/components/_side-nav.scss */
+.side-nav a {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 10px 8px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+/* line 28, ../sass/components/_side-nav.scss */
+.side-nav a:before {
+  margin-top: -2px;
+  margin-left: -2px;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(65, 180, 230, 0.8);
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "";
+}
+/* line 41, ../sass/components/_side-nav.scss */
+.side-nav a:hover, .side-nav a.active {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* end of side-nav */
 /* join */
 /* line 5, ../sass/components/_join.scss */
 .join {
-  height: 580px;
-  margin-top: 88px;
+  margin-top: 93px;
+  height: 560px;
   background-color: #0e579b;
   color: white;
 }
 
-/* line 12, ../sass/components/_join.scss */
+/* line 13, ../sass/components/_join.scss */
 .join-text {
-  top: 64px;
-  left: 120px;
-}
-/* line 17, ../sass/components/_join.scss */
-.join-text p {
-  padding-bottom: 2px;
-  font-size: 220%;
+  line-height: 1.2;
 }
 
-/* line 24, ../sass/components/_join.scss */
-.users {
-  top: 240px;
-  left: 200px;
+/* line 18, ../sass/components/_join.scss */
+.welcome-text {
+  margin-top: 64px;
 }
-/* line 33, ../sass/components/_join.scss */
-.users p .user-num {
-  font-size: 450%;
+@media screen and (min-width: 992px) {
+  /* line 18, ../sass/components/_join.scss */
+  .welcome-text {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* line 18, ../sass/components/_join.scss */
+  .welcome-text {
+    font-size: 38px;
+  }
 }
 
-/* line 39, ../sass/components/_join.scss */
+/* line 28, ../sass/components/_join.scss */
+.users-text {
+  font-size: 24px;
+}
+/* line 30, ../sass/components/_join.scss */
+.users-text .users-num {
+  line-height: 1.3;
+  font-size: 100px;
+}
+
+/* line 35, ../sass/components/_join.scss */
 .join-button {
-  top: 440px;
-  left: 280px;
   width: 96px;
   height: 40px;
-  background-color: #0a3f70;
-}
-/* line 48, ../sass/components/_join.scss */
-.join-button a {
-  top: 10px;
-  color: white;
-  text-decoration: none;
+  border: solid;
+  border-color: #0a3f70;
+  border-width: 1px;
+  padding: 8px;
+  font-size: 24px;
 }
 
-/* line 56, ../sass/components/_join.scss */
+/* line 51, ../sass/components/_join.scss */
+.join-button.btn {
+  line-height: 1;
+  color: white;
+  background-color: #0a3f70;
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+/* line 58, ../sass/components/_join.scss */
+.join-button.btn:hover {
+  color: #0a3f70;
+  background-color: white;
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+/* line 64, ../sass/components/_join.scss */
 .join-img {
-  width: 50%;
   float: right;
   background-image: url("../images/join.png");
-  opacity: 0.9;
 }
 
 /* end of join */
 /* introduction */
-/* line 9, ../sass/components/_introduction.scss */
-.introduction p {
-  padding-bottom: 6px;
-  font-size: 150%;
+/* line 10, ../sass/components/_introduction.scss */
+.introduction-text {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  line-height: 1.2;
 }
 
-/* line 15, ../sass/components/_introduction.scss */
-.introduction-text {
-  margin: 40px 0;
+/* line 17, ../sass/components/_introduction.scss */
+.introduction-text-title {
+  padding-bottom: 20px;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 22, ../sass/components/_introduction.scss */
+.introduction-text-content {
+  color: #b4b4b4;
+}
+@media screen and (min-width: 992px) {
+  /* line 22, ../sass/components/_introduction.scss */
+  .introduction-text-content {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 22, ../sass/components/_introduction.scss */
+  .introduction-text-content {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 22, ../sass/components/_introduction.scss */
+  .introduction-text-content {
+    font-size: 18px;
+  }
 }
 
 /* end of introduction */
@@ -209,37 +334,71 @@ body {
 }
 
 /* line 12, ../sass/components/_core.scss */
-.game, .social, .expert {
-  padding-top: 16px;
+.core.row {
+  margin: 0;
 }
-/* line 18, ../sass/components/_core.scss */
-.game h1, .social h1, .expert h1 {
-  font-size: 180%;
+
+/* line 19, ../sass/components/_core.scss */
+.game-text, .social-text, .expert-text {
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+/* line 25, ../sass/components/_core.scss */
+.game-text .core-text-title, .social-text .core-text-title, .expert-text .core-text-title {
+  font-size: 36px;
   padding-bottom: 20px;
 }
-/* line 23, ../sass/components/_core.scss */
-.game p, .social p, .expert p {
-  font-size: 120%;
+/* line 30, ../sass/components/_core.scss */
+.game-text .core-text-content, .social-text .core-text-content, .expert-text .core-text-content {
   padding-bottom: 6px;
 }
-
-/* line 28, ../sass/components/_core.scss */
-.game-img, .social-img, .expert-img {
-  background-size: 35%;
-  height: 290px;
+@media screen and (min-width: 992px) {
+  /* line 30, ../sass/components/_core.scss */
+  .game-text .core-text-content, .social-text .core-text-content, .expert-text .core-text-content {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 30, ../sass/components/_core.scss */
+  .game-text .core-text-content, .social-text .core-text-content, .expert-text .core-text-content {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 30, ../sass/components/_core.scss */
+  .game-text .core-text-content, .social-text .core-text-content, .expert-text .core-text-content {
+    font-size: 18px;
+  }
 }
 
-/* line 32, ../sass/components/_core.scss */
+/* line 43, ../sass/components/_core.scss */
+.game-img, .social-img, .expert-img {
+  height: 200px;
+}
+@media screen and (min-width: 768px) {
+  /* line 43, ../sass/components/_core.scss */
+  .game-img, .social-img, .expert-img {
+    background-size: 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 43, ../sass/components/_core.scss */
+  .game-img, .social-img, .expert-img {
+    background-size: 30%;
+  }
+}
+
+/* line 54, ../sass/components/_core.scss */
 .game-img {
   background-image: url("../images/game.png");
 }
 
-/* line 40, ../sass/components/_core.scss */
+/* line 55, ../sass/components/_core.scss */
 .social-img {
   background-image: url("../images/social.png");
 }
 
-/* line 48, ../sass/components/_core.scss */
+/* line 56, ../sass/components/_core.scss */
 .expert-img {
   background-image: url("../images/expert.png");
 }
@@ -248,34 +407,158 @@ body {
 /* form */
 /* line 5, ../sass/components/_form.scss */
 .form {
-  height: 900px;
+  height: 750px;
   background-color: #fbc02c;
-  color: white;
-}
-/* line 13, ../sass/components/_form.scss */
-.form p {
-  padding-bottom: 5px;
-  font-size: 150%;
+  color: whitesmoke;
 }
 
-/* line 18, ../sass/components/_form.scss */
+/* line 13, ../sass/components/_form.scss */
 .form-text {
   padding-top: 30px;
   padding-bottom: 30px;
+  line-height: 1.3;
+}
+@media screen and (min-width: 768px) {
+  /* line 13, ../sass/components/_form.scss */
+  .form-text {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 13, ../sass/components/_form.scss */
+  .form-text {
+    font-size: 18px;
+  }
+}
+/* line 25, ../sass/components/_form.scss */
+.form-text .fill_in {
+  color: white;
+}
+
+/* line 29, ../sass/components/_form.scss */
+.arrows-div {
+  width: 60px;
+  height: 70px;
+}
+
+/* line 39, ../sass/components/_form.scss */
+.arrows {
+  width: 60px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+}
+
+/* line 47, ../sass/components/_form.scss */
+.arrows path {
+  stroke: white;
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 71, ../sass/components/_form.scss */
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari and Chrome */
+}
+
+/* line 76, ../sass/components/_form.scss */
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari and Chrome */
+}
+
+/* line 81, ../sass/components/_form.scss */
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  /* Safari and Chrome */
 }
 
 /* end of form */
 /* contact-us */
 /* line 5, ../sass/components/_contact-us.scss */
 .contact-us {
-  height: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: #cfd8dc;
-  color: white;
+  color: rgba(0, 0, 0, 0.8);
 }
-/* line 12, ../sass/components/_contact-us.scss */
-.contact-us h1 {
-  padding: 35px 0;
-  font-size: xx-large;
+
+/* line 14, ../sass/components/_contact-us.scss */
+.contact-us-content h1 {
+  line-height: 1.8;
+  font-size: 30px;
+}
+
+/* line 20, ../sass/components/_contact-us.scss */
+.contact-us-img img {
+  height: 60px;
+  transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+/* line 25, ../sass/components/_contact-us.scss */
+.contact-us-img img:hover {
+  transform: scale(1.2) translateY(-10px);
+  -ms-transform: scale(1.2) translateY(-10px);
+  -moz-transform: scale(1.2) translateY(-10px);
+  -webkit-transform: scale(1.2) translateY(-10px);
+  -o-transform: scale(1.2) translateY(-10px);
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+
+/* line 31, ../sass/components/_contact-us.scss */
+.copyright {
+  padding-top: 20px;
+  color: #b4b4b4;
+}
+@media screen and (max-width: 768px) {
+  /* line 31, ../sass/components/_contact-us.scss */
+  .copyright {
+    font-size: 14px;
+  }
 }
 
 /* end of contact-us*/

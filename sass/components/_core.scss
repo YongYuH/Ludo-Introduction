@@ -4,53 +4,54 @@
 /* core */
 .core {
     @extend %relative;
-    //height: 580px;
+    @extend %as_wide_as_parent;
     @extend %text_center;
-    background-color: #ff9300;
+    background-color: $deep_orange;
     color: white;
 }
+.core.row {
+    // overwrite bootstrap margin
+    margin: 0;
+}
     .game, .social, .expert {
-        padding-top: 16px;
-        //width: 33%;
         @extend %as_tall_as_parent;
-        //float: left;
-        
-        h1 {
-            font-size: 180%;
-            padding-bottom: 20px;
-        }
+    }
+    .game-text, .social-text, .expert-text {
+        @extend %relative;
+        margin-bottom: $core-text_margin-bottom;
+        line-height: $core-text_line-height;
+        @extend %bold_font;
 
-        p {
-            font-size: 120%;
-            padding-bottom: 6px;
+        .core-text-title {
+            @extend %font_Exo2;
+            font-size: $core-text-title_font-size;
+            padding-bottom: $core-text-title_padding-bottom;
+        }
+        .core-text-content {
+            padding-bottom: $core-text-content_padding-bottom;
+            @media screen and (min-width: $bt_md_width) {
+                font-size: $core-text-content_font-size_pc;
+            }
+            @media screen and (min-width: $bt_xs_width) and (max-width: $bt_md_width) {
+                font-size: $core-text-content_font-size_pad;
+            }
+            @media screen and (max-width: $bt_xs_width) {
+                font-size: $core-text-content_font-size_mobile;
+            }
         }
     }
     .game-img, .social-img, .expert-img {
-        background-size: 35%;
-        height: 290px;
-    }
-    .game-img {
         @extend %relative;
         @extend %background_img_setting;
-        @include background_img_content(game);
+        height: $core-img_height;
+        @media screen and (min-width: $bt_xs_width) {
+            background-size: $core-img_size;
+        }
+        @media screen and (max-width: $bt_xs_width) {
+            background-size: $core-img_size_mobile;
+        }
     }
-    .game-text {
-        @extend %relative;
-    }
-    .social-img {
-        @extend %relative;
-        @extend %background_img_setting;
-        @include background_img_content(social);
-    }
-    .social-text {
-        @extend %relative;
-    }
-    .expert-img {
-        @extend %relative;
-        @extend %background_img_setting;
-        @include background_img_content(expert);
-    }
-    .expert-text {
-        @extend %relative;
-    }
+    .game-img { @include background_img_content(game); }
+    .social-img { @include background_img_content(social); }
+    .expert-img { @include background_img_content(expert); }
 /* end of core */

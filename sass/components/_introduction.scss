@@ -1,0 +1,34 @@
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "helpers/placeholders";
+/* introduction */
+.introduction {
+    @extend %relative;
+    @extend %as_wide_as_parent;
+    @extend %text_center;
+}
+    .introduction-text {
+        @extend %padding_x;
+        padding-top: $introduction_padding_y;
+        padding-bottom: $introduction_padding_y;
+        @extend %bold_font;
+        line-height: $introduction-text_line-height;
+    }
+        .introduction-text-title {
+            padding-bottom: $introduction-text-title_padding-bottom;
+            font-size: $introduction-text-title_font-size;
+            color: $black;
+        }
+        .introduction-text-content {
+            color: $deep_gray;
+            @media screen and (min-width: $bt_md_width) {
+                font-size: $introduction-text-content_font-size_pc;
+            }
+            @media screen and (min-width: $bt_xs_width) and (max-width: $bt_md_width) {
+                font-size: $introduction-text-content_font-size_pad;
+            }
+            @media screen and (max-width: $bt_xs_width) {
+                font-size: $introduction-text-content_font-size_mobile;
+            }
+        }
+/* end of introduction */
