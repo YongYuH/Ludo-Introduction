@@ -20,8 +20,11 @@
         }
         .introduction-text-content {
             color: $deep_gray;
-            @media screen and (min-width: $bt_xs_width) {
-                font-size: $introduction-text-content_font-size_desktop;
+            @media screen and (min-width: $bt_md_width) {
+                font-size: $introduction-text-content_font-size_pc;
+            }
+            @media screen and (min-width: $bt_xs_width) and (max-width: $bt_md_width) {
+                font-size: $introduction-text-content_font-size_pad;
             }
             @media screen and (max-width: $bt_xs_width) {
                 font-size: $introduction-text-content_font-size_mobile;

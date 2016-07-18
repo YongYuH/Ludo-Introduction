@@ -5,6 +5,7 @@
 $iphone6_width: 375px;
 $Nexus_6p_width: 435px;
 $bt_xs_width: 768px;
+$bt_md_width: 992px;
 
 // global padding
 $padding_x: 25px;
@@ -40,6 +41,7 @@ $core-text-title_padding-bottom: 20px;
 $core-text-content_padding-bottom: 6px;
 $core-img_height: 200px;
 $core-img_size: 35%;
+$core-img_size_mobile: 20%;
 
 // form
 $form_page_height: 750px;
@@ -61,12 +63,14 @@ $join-button_font-size: 24px;
 
 $introduction-text_line-height: 1.2;
 $introduction-text-title_font-size: 30px;
-$introduction-text-content_font-size_desktop: 30px;
+$introduction-text-content_font-size_pc: 30px;
+$introduction-text-content_font-size_pad: 24px;
 $introduction-text-content_font-size_mobile: 18px;
 
 $core-text_line-height: 1.3;
 $core-text-title_font-size: 36px;
-$core-text-content_font-size_desktop: 24px;
+$core-text-content_font-size_pc: 24px;
+$core-text-content_font-size_pad: 21px;
 $core-text-content_font-size_mobile: 18px;
 
 $form-text_line-height: 1.3;

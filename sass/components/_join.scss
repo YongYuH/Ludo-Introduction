@@ -18,10 +18,10 @@
         .welcome-text {
             margin-top: $welcome-text_from_top;
             @extend %font_Exo2;
-            @media screen and (min-width: $bt_xs_width) {
+            @media screen and (min-width: $bt_md_width) {
                 font-size: $welcome-text_font-size_desktop;
             }
-            @media screen and (max-width: $bt_xs_width) {
+            @media screen and (max-width: $bt_md_width) {
                 font-size: $welcome-text_font-size_mobile;
             }
         }

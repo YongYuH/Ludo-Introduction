@@ -29,8 +29,11 @@
         }
         .core-text-content {
             padding-bottom: $core-text-content_padding-bottom;
-            @media screen and (min-width: $bt_xs_width) {
-                font-size: $core-text-content_font-size_desktop;
+            @media screen and (min-width: $bt_md_width) {
+                font-size: $core-text-content_font-size_pc;
+            }
+            @media screen and (min-width: $bt_xs_width) and (max-width: $bt_md_width) {
+                font-size: $core-text-content_font-size_pad;
             }
             @media screen and (max-width: $bt_xs_width) {
                 font-size: $core-text-content_font-size_mobile;
@@ -41,7 +44,12 @@
         @extend %relative;
         @extend %background_img_setting;
         height: $core-img_height;
-        background-size: $core-img_size;
+        @media screen and (min-width: $bt_xs_width) {
+            background-size: $core-img_size;
+        }
+        @media screen and (max-width: $bt_xs_width) {
+            background-size: $core-img_size_mobile;
+        }
     }
     .game-img { @include background_img_content(game); }
     .social-img { @include background_img_content(social); }
