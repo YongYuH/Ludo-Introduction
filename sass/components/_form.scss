@@ -4,6 +4,7 @@
 /* form */
 .form {
     @extend %relative;
+    @extend %header_height_offset;
     height: $form_page_height;
     @extend %as_wide_as_parent;
     @extend %text_center;

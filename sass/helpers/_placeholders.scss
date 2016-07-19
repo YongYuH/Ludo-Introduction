@@ -11,6 +11,9 @@
 %as_tall_as_parent { height: 100%; }
 %half_height_of_parent { height: 50%; }
 
+// offset
+%header_height_offset {top: $header_height;}
+
 // margin
 %margin_center_x { margin: 0 auto; }
 

@@ -1,5 +1,4 @@
-var header_height = 93;
-var completed_users = 10;
+var headerHeight = 93;
 
 $(document).ready(function() {
     // animation
@@ -19,6 +18,7 @@ $(document).ready(function() {
         }
     });
 
+    
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll-top').bind('click', function(event) {
         $('html, body').stop().animate({
@@ -31,20 +31,23 @@ $(document).ready(function() {
         $('a.page-scroll').removeClass("active");
         $(this).addClass("active");
         var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - header_height
-        }, 1100, 'easeOutCubic');
+        var sectionPosition = $($anchor.attr('href')).offset().top;
+        var sectionPositionWithHeader = sectionPosition - headerHeight;
+        $('html, body').stop(true, false).animate({
+            scrollTop: sectionPositionWithHeader
+        }, 800, 'easeOutCubic');
         event.preventDefault();
     });
 
 
     // Modify user number
-    //console.log(completed_users);
-    $('.users-num').text(completed_users.toString());
+    var completedUsers = 10;
+    //console.log(completedUsers);
+    $('.users-num').text(completedUsers.toString());
 });
 
 function onScroll(event){
-    var scrollPos = $(document).scrollTop() + header_height;
+    var scrollPos = $(document).scrollTop() + headerHeight;
     $('.side-nav a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));

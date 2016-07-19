@@ -4,6 +4,7 @@
 /* introduction */
 .introduction {
     @extend %relative;
+    @extend %header_height_offset;
     @extend %as_wide_as_parent;
     @extend %text_center;
 }

@@ -4,7 +4,7 @@
 /* side-nav */
 .side-nav {
     @extend %fixed;
-    top: $header_height;
+    @extend %header_height_offset;
     height: 100%;
     width: $side-nav_width;
     z-index: $side-nav_depth;

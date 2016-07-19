@@ -5,6 +5,7 @@
 .core {
     @extend %relative;
     @extend %as_wide_as_parent;
+    @extend %header_height_offset;
     @extend %text_center;
     background-color: $deep_orange;
     color: white;
