@@ -21,9 +21,9 @@ $(document).ready(function() {
     
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll-top').bind('click', function(event) {
-        $('html, body').stop().animate({
+        $('html, body').stop(true, false).animate({
             scrollTop: 0
-        }, 1100, 'easeOutCubic');
+        }, 800, 'easeOutCubic');
         event.preventDefault();
     });
 

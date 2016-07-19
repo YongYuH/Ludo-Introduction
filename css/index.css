@@ -146,28 +146,27 @@ body {
   border-bottom-style: solid;
   border-bottom-color: whitesmoke;
   box-shadow: 0 1px 5px #505050;
-  transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-}
-/* line 17, ../sass/components/_header.scss */
-.header:hover {
-  background-color: rgba(207, 216, 220, 0.98);
-  transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
 }
 
-/* line 22, ../sass/components/_header.scss */
+/* line 17, ../sass/components/_header.scss */
 .header-logo-div {
   width: 250px;
 }
 
-/* line 28, ../sass/components/_header.scss */
+/* line 23, ../sass/components/_header.scss */
 .header-logo {
   background-image: url("../images/Logo.png");
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+}
+/* line 29, ../sass/components/_header.scss */
+.header-logo:hover {
+  transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
 }
 
 /* end of header bar */

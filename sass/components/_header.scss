@@ -13,11 +13,6 @@
     border-bottom-style: solid;
     border-bottom-color: $smoke_white;
     box-shadow: 0 1px 5px $dark_gray;
-    @include transition-duration(0.2s);
-    &:hover {
-        background-color: $transparent_gray;
-        @include transition-duration(0.2s);
-    }
 }
     .header-logo-div {
         @extend %relative;
@@ -30,6 +25,11 @@
             @extend %as_tall_as_parent;
             @include background_img_content(Logo);
             @extend %background_img_setting;
+            @include transition-duration(0.2s);
+            &:hover {
+
+                @include transition-duration(0.2s);
+            }
         }
     // .log-in {
     //     @extend %absolute;
