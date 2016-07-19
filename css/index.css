@@ -520,13 +520,13 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* line 14, ../sass/components/_contact-us.scss */
-.contact-us-content h1 {
+/* line 13, ../sass/components/_contact-us.scss */
+.contact-us-title {
   line-height: 1.8;
   font-size: 30px;
 }
 
-/* line 20, ../sass/components/_contact-us.scss */
+/* line 18, ../sass/components/_contact-us.scss */
 .contact-us-img img {
   height: 60px;
   transition-timing-function: ease-in;
@@ -538,7 +538,7 @@ body {
   -webkit-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
 }
-/* line 25, ../sass/components/_contact-us.scss */
+/* line 23, ../sass/components/_contact-us.scss */
 .contact-us-img img:hover {
   transform: scale(1.2) translateY(-10px);
   -ms-transform: scale(1.2) translateY(-10px);
@@ -551,13 +551,13 @@ body {
   -o-transition-duration: 0.2s;
 }
 
-/* line 31, ../sass/components/_contact-us.scss */
+/* line 29, ../sass/components/_contact-us.scss */
 .copyright {
   padding-top: 20px;
   color: #b4b4b4;
 }
 @media screen and (max-width: 768px) {
-  /* line 31, ../sass/components/_contact-us.scss */
+  /* line 29, ../sass/components/_contact-us.scss */
   .copyright {
     font-size: 14px;
   }

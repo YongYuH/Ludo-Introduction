@@ -1,6 +1,11 @@
 var headerHeight = 93;
+var completedUsers = 10;
+
+var lang = window.navigator.userLanguage || window.navigator.language ;     
+var relang = lang.toLowerCase();
 
 $(document).ready(function() {
+    renderLanguageText(relang);
     // animation
     $(document).on("scroll", onScroll);
 
@@ -38,10 +43,10 @@ $(document).ready(function() {
         }, 800, 'easeOutCubic');
         event.preventDefault();
     });
+});
 
-
+$('.users-num').ready(function() {
     // Modify user number
-    var completedUsers = 10;
     //console.log(completedUsers);
     $('.users-num').text(completedUsers.toString());
 });

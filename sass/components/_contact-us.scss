@@ -10,30 +10,28 @@
     background-color: $gray;
     color: $black;
 }
-    .contact-us-content {
-        h1 {
-            line-height: $contact-us-content_line-height;
-            font-size: $contact-us_text_font-size;
-        }
+    .contact-us-title {
+        line-height: $contact-us-content_line-height;
+        font-size: $contact-us_text_font-size;
     }
-        .contact-us-img {
-            img {
-                height: $contact-us-img_height;
-                @include transition-timing-function(ease-in);
-                @include transition-duration(0.2s);
+    .contact-us-img {
+        img {
+            height: $contact-us-img_height;
+            @include transition-timing-function(ease-in);
+            @include transition-duration(0.2s);
 
-                &:hover {
-                    @include transform(1.2, -10px);
-                    @include transition-duration(0.2s);
-                }
+            &:hover {
+                @include transform(1.2, -10px);
+                @include transition-duration(0.2s);
             }
         }
-        .copyright {
-             padding-top: $copyright_padding-top;
-             color: $deep_gray;
+    }
+    .copyright {
+         padding-top: $copyright_padding-top;
+         color: $deep_gray;
 
-             @media screen and (max-width: $bt_xs_width) {
-                font-size: $copyright_font-size_mobile;
-             }
-        }
+         @media screen and (max-width: $bt_xs_width) {
+            font-size: $copyright_font-size_mobile;
+         }
+    }
 /* end of contact-us*/
