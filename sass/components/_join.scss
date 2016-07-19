@@ -5,7 +5,7 @@
 .join {
     @extend %relative;
     @extend %as_wide_as_parent;
-    margin-top: $header_height;
+    @extend %header_height_offset;
     height: $join-page_height;
     background-color: $blue;
     color: white;
