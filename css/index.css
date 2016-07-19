@@ -98,7 +98,7 @@ table {
 }
 
 /* line 24, ../sass/helpers/_placeholders.scss */
-.introduction-text, .form-text, .typeform-div {
+.introduction-text, .desktop-form-text, .mobile-form-text, .typeform-div {
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -121,7 +121,7 @@ table {
 }
 
 /* line 39, ../sass/helpers/_placeholders.scss */
-.join-text, .introduction-text, .game-text, .social-text, .expert-text, .form-text {
+.join-text, .introduction-text, .game-text, .social-text, .expert-text, .desktop-form-text, .mobile-form-text {
   font-weight: bold;
 }
 
@@ -416,25 +416,25 @@ body {
 }
 
 /* line 14, ../sass/components/_form.scss */
-.form-text {
+.desktop-form-text, .mobile-form-text {
   padding-top: 30px;
   padding-bottom: 30px;
   line-height: 1.3;
 }
 @media screen and (min-width: 768px) {
   /* line 14, ../sass/components/_form.scss */
-  .form-text {
+  .desktop-form-text, .mobile-form-text {
     font-size: 30px;
   }
 }
 @media screen and (max-width: 768px) {
   /* line 14, ../sass/components/_form.scss */
-  .form-text {
+  .desktop-form-text, .mobile-form-text {
     font-size: 18px;
   }
 }
 /* line 26, ../sass/components/_form.scss */
-.form-text .fill_in {
+.desktop-form-text .fill_in, .mobile-form-text .fill_in {
   color: white;
 }
 

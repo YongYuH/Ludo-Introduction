@@ -11,7 +11,7 @@
     background-color: $orange;
     color: $smoke_white;
 }
-    .form-text {
+    .desktop-form-text, .mobile-form-text {
         @extend %padding_x;
         padding-top: $form-text_padding_y;
         padding-bottom: $form-text_padding_y;

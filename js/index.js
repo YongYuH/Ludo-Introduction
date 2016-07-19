@@ -5,6 +5,7 @@ var lang = window.navigator.userLanguage || window.navigator.language ;
 var relang = lang.toLowerCase();
 
 $(document).ready(function() {
+    // language detect and render corresponding language
     renderLanguageText(relang);
     // animation
     $(document).on("scroll", onScroll);
@@ -47,7 +48,6 @@ $(document).ready(function() {
 
 $('.users-num').ready(function() {
     // Modify user number
-    //console.log(completedUsers);
     $('.users-num').text(completedUsers.toString());
 });
 
