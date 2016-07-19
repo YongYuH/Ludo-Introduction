@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
         integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"
+        integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="
+        crossorigin="anonymous">
+    </script>
     <script type="text/javascript">
-        (function(){
-            var lang = navigator.userLanguage || navigator.language ;     
+        $(function(){
+            var lang = window.navigator.userLanguage || window.navigator.language ;     
             var relang = lang.toLowerCase();
             switch (relang){
                 case "en-us":
