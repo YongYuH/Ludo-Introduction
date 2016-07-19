@@ -17,6 +17,9 @@ var html_text_object = {
         "fill_in": "Fill in the form",
         "typeform-div": '<div class="typeform-widget" data-url="https://yongyuh.typeform.com/to/RmhHAY" data-text="Ludo" style="width:100%;height:100%;"></div><script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id=\'typef_orm\',b=\'https://s3-eu-west-1.amazonaws.com/share.typeform.com/\';if(!gi.call(d,id)) {js=ce.call(d,\'script\');js.id=id;js.src=b+\'widget.js\';q=gt.call(d,\'script\')[0];q.parentNode.insertBefore(js,q)}})()</script><div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by<a href="https://www.typeform.com/examples/forms/?utm_campaign=RmhHAY&amp;utm_source=typeform.com-3813118-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a></div>',
         "contact-us-title": "Contact Us",
+        "facebook": '<a href="https://www.facebook.com/LUDO-Now-1155062761203764/?fref=ts" target="_blank"><img src="./images/facebook.png" alt="facebook"/></a>',
+        "twitter": '<a href="https://grouptweet.com/LUDO_Now/33a69f55c49ba6310b08007c532ab9cb" target="_blank"><img src="./images/twitter.png" alt="twitter"/></a>',
+        "email": '<a href="mailto:ludonow.com@gmail.com" target="_blank"><img src="./images/email.png" alt="email"/></a>',
         "copyright": "© 2016 LUDONOW.COM ALL RIGHTS RESERVED"
     },
     "zh-tw": {
@@ -37,6 +40,9 @@ var html_text_object = {
         "fill_in": "立即填寫表單",
         "typeform-div": '<div class="typeform-widget" data-url="https://yongyuh.typeform.com/to/NBIykg" data-text="Ludo" style="width:100%;height:500px;"></div><script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id=\'typef_orm\',b=\'https://s3-eu-west-1.amazonaws.com/share.typeform.com/\';if(!gi.call(d,id)){js=ce.call(d,\'script\');js.id=id;js.src=b+\'widget.js\';q=gt.call(d,\'script\')[0];q.parentNode.insertBefore(js,q)}})()</script><div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="https://www.typeform.com/examples/forms/?utm_campaign=NBIykg&amp;utm_source=typeform.com-3813118-Basic&amp;utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=ZH" style="color: #999" target="_blank">Typeform</a></div>',
         "contact-us-title": "聯絡我們",
+        "facebook": '<a href="https://www.facebook.com/ludonow/?fref=ts" target="_blank"><img src="./images/facebook.png" alt="facebook"/></a>',
+        "twitter": '<a href="https://grouptweet.com/LUDO_Now/33a69f55c49ba6310b08007c532ab9cb" target="_blank"><img src="./images/twitter.png" alt="twitter"/></a>',
+        "email": '<a href="mailto:ludonow.com@gmail.com" target="_blank"><img src="./images/email.png" alt="email"/></a>',
         "copyright": "© 2016 LUDONOW.COM ALL RIGHTS RESERVED"
     }
 }
