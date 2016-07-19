@@ -8,7 +8,7 @@
     z-index: $header_depth;
     @extend %as_wide_as_parent;
     height: $header_height;
-    background-color: $transparent_white;
+    background-color: white;
     border-width: $header_border-width;
     border-bottom-style: solid;
     border-bottom-color: $smoke_white;
@@ -23,11 +23,11 @@
         .header-logo {
             @extend %relative;
             @extend %as_tall_as_parent;
-            @include background_img_content(Logo);
+            @include background_img_content(Ludo_logo);
             @extend %background_img_setting;
             @include transition-duration(0.2s);
             &:hover {
-
+                @include background_img_content(Ludo_logo_shadow);
                 @include transition-duration(0.2s);
             }
         }

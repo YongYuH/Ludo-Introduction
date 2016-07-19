@@ -141,7 +141,7 @@ body {
   top: 0;
   z-index: 5;
   height: 93px;
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color: white;
   border-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: whitesmoke;
@@ -155,7 +155,7 @@ body {
 
 /* line 23, ../sass/components/_header.scss */
 .header-logo {
-  background-image: url("../images/Logo.png");
+  background-image: url("../images/Ludo_logo.png");
   transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
@@ -163,6 +163,7 @@ body {
 }
 /* line 29, ../sass/components/_header.scss */
 .header-logo:hover {
+  background-image: url("../images/Ludo_logo_shadow.png");
   transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
