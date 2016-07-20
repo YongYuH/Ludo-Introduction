@@ -28,7 +28,7 @@ var html_text_object = {
         "users-num-after": "人<br>一起成長",
         "join-button": "加入",
         "introduction-text-title": "什麼是<span class=\"english\">Ludo</span>",
-        "introduction-text-content": "<span class=\"english\">Ludo</span>是一個免費的網頁服務<br>我們希望人們生活中的大小事<br>都可以透過<span class=\"english\">Ludo</span>被重新定義<br>並且直接回饋到每個人身上",
+        "introduction-text-content": "<span class=\"english\">Ludo</span>是一個免費的網頁服務，我們希望人們生活中的大小事<br>都可以透過<span class=\"english\">Ludo</span>被重新定義並且直接回饋到每個人身上",
         "game-text-title": "遊戲",
         "game-text-content": "簡單的操作方式<br>由回報、遊戲、時間三大要素<br>讓你輕鬆開始養成習慣",
         "social-text-title": "社交",
