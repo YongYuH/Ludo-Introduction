@@ -40,6 +40,8 @@
 
         a:hover, a.active {
             background-color: $black;
+            @include transform(1.2);
+            @include transition-duration(0.5s);
         }
 }
 /* end of side-nav */
