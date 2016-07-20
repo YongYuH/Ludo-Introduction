@@ -23,6 +23,7 @@
         .header-logo {
             @extend %relative;
             @extend %as_tall_as_parent;
+            @include background_img_content(Ludo_logo_shadow);
             @include background_img_content(Ludo_logo);
             @extend %background_img_setting;
             @include transition-duration(0.2s);
