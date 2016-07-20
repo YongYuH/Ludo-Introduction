@@ -23,14 +23,16 @@
         .header-logo {
             @extend %relative;
             @extend %as_tall_as_parent;
-            @include background_img_content(Ludo_logo_shadow);
             @include background_img_content(Ludo_logo);
             @extend %background_img_setting;
             @include transition-duration(0.2s);
             &:hover {
-                @include background_img_content(Ludo_logo_shadow);
+                opacity: 0;
                 @include transition-duration(0.2s);
             }
+        }
+        .header-logo-shadow {
+            @include background_img_content(Ludo_logo_shadow);
         }
     // .log-in {
     //     @extend %absolute;
