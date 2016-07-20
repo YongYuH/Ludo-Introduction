@@ -16,7 +16,6 @@
         padding-top: $form-text_padding_y;
         padding-bottom: $form-text_padding_y;
         line-height: $form-text_line-height;
-        @extend %bold_font;
         @media screen and (min-width: $bt_xs_width) {
             font-size: $form-text_font-size_desktop;
         }

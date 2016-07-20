@@ -21,10 +21,10 @@
         @extend %relative;
         margin-bottom: $core-text_margin-bottom;
         line-height: $core-text_line-height;
-        @extend %bold_font;
 
         .core-text-title {
             @extend %font_Exo2;
+            @extend %bold_font;
             font-size: $core-text-title_font-size;
             padding-bottom: $core-text-title_padding-bottom;
         }

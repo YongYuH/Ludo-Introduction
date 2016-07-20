@@ -13,10 +13,10 @@
     .join-text {
         @extend %text_center;
         line-height: $join-text_line-height;
-        @extend %bold_font;
     }
         .welcome-text {
             margin-top: $welcome-text_from_top;
+            @extend %bold_font;
             @extend %font_Exo2;
             @media screen and (min-width: $bt_md_width) {
                 font-size: $welcome-text_font-size_desktop;
@@ -27,6 +27,9 @@
         }
         .users-text {
             font-size: $users-text_font-size;
+            .users-num-before, .users-num-after {
+                @extend %light_font;
+            }
             .users-num {
                 line-height: $users-num_line-height;
                 font-size: $users-num_font-size;
@@ -43,10 +46,6 @@
             @extend %text_center;
             @extend %remove_text-decoration;
             font-size: $join-button_font-size;
-
-            &:hover {
-
-            }
         }
         .join-button.btn {
             // overwrite bootstrap button line-height

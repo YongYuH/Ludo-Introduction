@@ -12,16 +12,16 @@
         @extend %padding_x;
         padding-top: $introduction_padding_y;
         padding-bottom: $introduction_padding_y;
-        @extend %bold_font;
         line-height: $introduction-text_line-height;
     }
         .introduction-text-title {
             padding-bottom: $introduction-text-title_padding-bottom;
+            @extend %bold_font;
             font-size: $introduction-text-title_font-size;
             color: $black;
         }
         .introduction-text-content {
-            color: $deep_gray;
+            color: $light-black;
             @media screen and (min-width: $bt_md_width) {
                 font-size: $introduction-text-content_font-size_pc;
             }

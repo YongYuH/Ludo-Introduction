@@ -25,7 +25,7 @@ $side-nav_width: 20px;
 // join
 $join-page_height: 560px;
 $welcome-text_from_top: 64px; // 1.6 cm
-$join-button_width: 96px; // 2.4 cm
+$join-button_width: 112px; // 2.4 cm
 $join-button_height: 40px; // 1 cm
 $join-button_border-width: 1px;
 $join-button_padding: 8px;
@@ -63,18 +63,18 @@ $join-button_font-size: 24px;
 
 $introduction-text_line-height: 1.2;
 $introduction-text-title_font-size: 30px;
-$introduction-text-content_font-size_pc: 30px;
-$introduction-text-content_font-size_pad: 24px;
+$introduction-text-content_font-size_pc: 18px;
+$introduction-text-content_font-size_pad: 18px;
 $introduction-text-content_font-size_mobile: 18px;
 
 $core-text_line-height: 1.3;
 $core-text-title_font-size: 36px;
-$core-text-content_font-size_pc: 24px;
-$core-text-content_font-size_pad: 21px;
+$core-text-content_font-size_pc: 18px;
+$core-text-content_font-size_pad: 18px;
 $core-text-content_font-size_mobile: 18px;
 
 $form-text_line-height: 1.3;
-$form-text_font-size_desktop: 30px;
+$form-text_font-size_desktop: 26px;
 $form-text_font-size_mobile: 18px;
 
 $contact-us-content_line-height: 1.8;
@@ -89,6 +89,7 @@ $deep_gray: rgba(180, 180, 180, 1);
 $dark_gray: rgba(80, 80, 80, 1);
 $deep_orange: rgba(255, 147, 0, 1);
 $gray: rgba(207, 216, 220, 1);
+$light-black: rgba(51, 51, 51, 1);
 $orange: rgba(251, 192, 44, 1);
 $smoke_white: rgba(245, 245, 245, 1);
 $transparent_gray: rgba(207, 216, 220, 0.98);
