@@ -27,13 +27,8 @@
         }
     }
     .copyright {
-         padding-top: $copyright_padding-top;
-         color: $deep_gray;
-         @media screen and (min-width: $bt_xs_width) {
-            font-size: $copyright_font-size_pc;
-         }
-         @media screen and (max-width: $bt_xs_width) {
-            font-size: $copyright_font-size_mobile;
-         }
+        padding-top: $copyright_padding-top;
+        color: $deep_gray;
+        font-size: $copyright_font-size;
     }
 /* end of contact-us*/

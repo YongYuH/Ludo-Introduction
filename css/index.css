@@ -508,7 +508,7 @@ body {
 /* line 13, ../sass/components/_contact-us.scss */
 .contact-us-title {
   line-height: 1.8;
-  font-size: 30px;
+  font-size: 18px;
 }
 
 /* line 18, ../sass/components/_contact-us.scss */
@@ -540,18 +540,7 @@ body {
 .copyright {
   padding-top: 20px;
   color: #b4b4b4;
-}
-@media screen and (min-width: 768px) {
-  /* line 29, ../sass/components/_contact-us.scss */
-  .copyright {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* line 29, ../sass/components/_contact-us.scss */
-  .copyright {
-    font-size: 14px;
-  }
+  font-size: 12px;
 }
 
 /* end of contact-us*/
