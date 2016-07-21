@@ -68,17 +68,17 @@ table {
 }
 
 /* line 6, ../sass/helpers/_placeholders.scss */
-.header-logo-div, .header-logo, .join, .join-img, .introduction, .core, .game-text, .social-text, .expert-text, .game-img, .social-img, .expert-img, .form, .contact-us {
+.header-logo-div, .header-logo, .header-logo-shadow, .join, .join-img, .introduction, .core, .game-text, .social-text, .expert-text, .game-img, .social-img, .expert-img, .form, .contact-us {
   position: relative;
 }
 
 /* line 9, ../sass/helpers/_placeholders.scss */
-.header, .join, .introduction, .core, .form {
+.header, .header-logo-shadow, .join, .introduction, .core, .form {
   width: 100%;
 }
 
 /* line 11, ../sass/helpers/_placeholders.scss */
-.header-logo-div, .header-logo, .join-img, .game, .social, .expert {
+.header-logo-div, .header-logo, .header-logo-shadow, .join-img, .game, .social, .expert {
   height: 100%;
 }
 
@@ -104,7 +104,7 @@ table {
 }
 
 /* line 30, ../sass/helpers/_placeholders.scss */
-.header-logo, .join-img, .game-img, .social-img, .expert-img {
+.header-logo, .header-logo-shadow, .join-img, .game-img, .social-img, .expert-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -144,7 +144,7 @@ body {
 /* line 5, ../sass/components/_header.scss */
 .header {
   top: 0;
-  z-index: 5;
+  z-index: 2;
   height: 93px;
   background-color: white;
   border-width: 1px;
@@ -160,7 +160,7 @@ body {
 
 /* line 23, ../sass/components/_header.scss */
 .header-logo {
-  background-image: url("../images/Ludo_logo_shadow.png");
+  z-index: 5;
   background-image: url("../images/Ludo_logo.png");
   transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -169,11 +169,18 @@ body {
 }
 /* line 30, ../sass/components/_header.scss */
 .header-logo:hover {
-  background-image: url("../images/Ludo_logo_shadow.png");
+  opacity: 0;
   transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
+}
+
+/* line 35, ../sass/components/_header.scss */
+.header-logo-shadow {
+  top: -93px;
+  z-index: 2;
+  background-image: url("../images/Ludo_logo_shadow.png");
 }
 
 /* end of header bar */
@@ -549,22 +556,22 @@ body {
   -moz-transition-timing-function: ease-in;
   -webkit-transition-timing-function: ease-in;
   -o-transition-timing-function: ease-in;
-  transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
+  transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
 }
 /* line 23, ../sass/components/_contact-us.scss */
 .contact-us-img img:hover {
-  transform: scale(1.2) translateY(-10px);
-  -ms-transform: scale(1.2) translateY(-10px);
-  -moz-transform: scale(1.2) translateY(-10px);
-  -webkit-transform: scale(1.2) translateY(-10px);
-  -o-transform: scale(1.2) translateY(-10px);
-  transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
+  transform: scale(1.1) translateY(-10px);
+  -ms-transform: scale(1.1) translateY(-10px);
+  -moz-transform: scale(1.1) translateY(-10px);
+  -webkit-transform: scale(1.1) translateY(-10px);
+  -o-transform: scale(1.1) translateY(-10px);
+  transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
 }
 
 /* line 29, ../sass/components/_contact-us.scss */

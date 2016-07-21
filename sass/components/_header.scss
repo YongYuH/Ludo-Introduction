@@ -22,6 +22,7 @@
     }
         .header-logo {
             @extend %relative;
+            z-index: $header-logo_depth;
             @extend %as_tall_as_parent;
             @include background_img_content(Ludo_logo);
             @extend %background_img_setting;
@@ -32,6 +33,12 @@
             }
         }
         .header-logo-shadow {
+            @extend %relative;
+            top: -$header_height;
+            z-index: $header-logo-shadow_depth;
+            @extend %as_wide_as_parent;
+            @extend %as_tall_as_parent;
+            @extend %background_img_setting;
             @include background_img_content(Ludo_logo_shadow);
         }
     // .log-in {

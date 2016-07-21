@@ -18,11 +18,11 @@
         img {
             height: $contact-us-img_height;
             @include transition-timing-function(ease-in);
-            @include transition-duration(0.2s);
+            @include transition-duration(0.1s);
 
             &:hover {
-                @include transform(1.2, -10px);
-                @include transition-duration(0.2s);
+                @include transform(1.1, -10px);
+                @include transition-duration(0.1s);
             }
         }
     }
