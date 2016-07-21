@@ -30,15 +30,7 @@
         }
         .core-text-content {
             padding-bottom: $core-text-content_padding-bottom;
-            @media screen and (min-width: $bt_md_width) {
-                font-size: $core-text-content_font-size_pc;
-            }
-            @media screen and (min-width: $bt_xs_width) and (max-width: $bt_md_width) {
-                font-size: $core-text-content_font-size_pad;
-            }
-            @media screen and (max-width: $bt_xs_width) {
-                font-size: $core-text-content_font-size_mobile;
-            }
+            font-size: $core-text-content_font-size;
         }
     }
     .game-img, .social-img, .expert-img {
