@@ -63,12 +63,12 @@ table {
 }
 
 /* line 5, ../sass/helpers/_placeholders.scss */
-.side-nav .side-nav-button {
+.side-nav .side-nav-buttons, .side-nav .side-nav-button-center {
   position: absolute;
 }
 
 /* line 6, ../sass/helpers/_placeholders.scss */
-.header-logo-div, .header-logo, .header-logo-shadow, .join, .join-img, .introduction, .core, .game-text, .social-text, .expert-text, .game-img, .social-img, .expert-img, .form, .contact-us {
+.header-logo-div, .header-logo, .header-logo-shadow, .side-nav .side-nav-button, .join, .join-img, .introduction, .core, .game-text, .social-text, .expert-text, .game-img, .social-img, .expert-img, .form, .contact-us {
   position: relative;
 }
 
@@ -95,6 +95,11 @@ table {
 /* line 18, ../sass/helpers/_placeholders.scss */
 .header-logo-div, .arrows-div {
   margin: 0 auto;
+}
+
+/* line 21, ../sass/helpers/_placeholders.scss */
+.side-nav .side-nav-button, .side-nav .side-nav-button-center {
+  border-radius: 50%;
 }
 
 /* line 24, ../sass/helpers/_placeholders.scss */
@@ -188,39 +193,30 @@ body {
 /* line 5, ../sass/components/_side-nav.scss */
 .side-nav {
   height: 100%;
-  width: 20px;
+  width: 40px;
   z-index: 2;
 }
 /* line 13, ../sass/components/_side-nav.scss */
-.side-nav .side-nav-button {
+.side-nav .side-nav-buttons {
   top: 33%;
 }
 /* line 18, ../sass/components/_side-nav.scss */
-.side-nav a {
+.side-nav .side-nav-button {
   display: block;
-  position: relative;
   width: 20px;
   height: 20px;
-  margin: 10px 8px;
-  border: 6px solid transparent;
-  border-radius: 50%;
-  vertical-align: middle;
+  margin: 10px;
 }
-/* line 28, ../sass/components/_side-nav.scss */
-.side-nav a:before {
-  margin-top: -2px;
-  margin-left: -2px;
+/* line 26, ../sass/components/_side-nav.scss */
+.side-nav .side-nav-button-center {
+  top: 7.5px;
+  left: 7.5px;
   width: 5px;
   height: 5px;
   background-color: #cfd8dc;
-  border-radius: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: "";
 }
-/* line 41, ../sass/components/_side-nav.scss */
-.side-nav a:hover, .side-nav a.active {
+/* line 35, ../sass/components/_side-nav.scss */
+.side-nav .side-nav-button:hover, .side-nav .active {
   background-color: rgba(0, 0, 0, 0.8);
   transform: scale(1.2) translateY();
   -ms-transform: scale(1.2) translateY();

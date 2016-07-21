@@ -10,35 +10,29 @@
     z-index: $side-nav_depth;
     @extend %text_center;
     
-    .side-nav-button{
+    .side-nav-buttons {
         @extend %absolute;
         top: 33%;
     }
         // dot on side nav bar
-        a {
+        .side-nav-button {
+            @extend %relative;
             display: block;
-            position: relative;
-            width: 20px;
-            height: 20px;
-            margin: 10px 8px;
-            border: 6px solid transparent;
-            border-radius: 50%;
-            vertical-align: middle;
+            width: $side-nav-button_width;
+            height: $side-nav-button_height;
+            margin: $side-nav-button_margin;
+            @extend %round_border;
         }
-        a:before {
-            margin-top: -2px;
-            margin-left: -2px;
-            width: 5px;
-            height: 5px;
+        .side-nav-button-center {
+            @extend %absolute;
+            top: 7.5px;
+            left: 7.5px;
+            width: $side-nav-button-center_width;
+            height: $side-nav-button-center_height;
+            @extend %round_border;
             background-color: $gray;
-            border-radius: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            content: "";
         }
-
-        a:hover, a.active {
+        .side-nav-button:hover, .active {
             background-color: $black;
             @include transform(1.2);
             @include transition-duration(0.5s);
